@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+body {background-color:#1f4e80;}
+#elexTipsAjax{ margin-top:10px;}
+.wrapper{ width:1000px; height:485px; overflow:hidden; margin:100px auto 0px;}
+.login_box{ padding: 0 85px 0 0; width: 320px; float:left;}
+.login_box .modal-header {border:none; height: 60px; padding:9px 0;}
+.register_box{width:560px; height: 484px; float:right; background:#fff; border:1px solid #000;}
+.login_box h3 { font-size:23px; color: #e2e2e2;}
+.register_box h3 {font-size: 23px; color: #000;}
+.register_box .modal-header {background-color: #f2f5fa;}
+.register_box .modal-header h3{margin: 15px auto; text-align: center;}
+.login_box form, .register_box form{ padding:30px 5px; margin:0; overflow:hidden;}
+.login_box form .user_name{ margin-bottom:5px;}
+.login_box form {border-bottom:2px dashed #38689B; border-top:2px dashed #38689B;}
+.user_name, .password_login, .forget_password, .fb_gb_login, .register{ display:inline-block;}
+.login_box .user_name input, .password_login input { width:260px; height:30px; line-height:30px; background-color: #356598; border:none; color: #abbed2}
+.register_box .rg_username input, .register_box .rg_pw input, .register_box .rg_repw input, .register_box .rg_email input{ width:209px; height:30px; margin-bottom: 4px;line-height:30px; border-color:#DDDFDF; background-color: #f0f0f0;}
+.register_box .rg_username input.success, .register_box .rg_pw input.success, .register_box .rg_repw input.success, .register_box .rg_email input.success{ border-color:rgba(81, 163, 81, 0.8); box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(81, 163, 81, 0.6); -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(81, 163, 81, 0.6);}
+.reg_label {width:180px; float:left; text-align:right;font-size:12px; text-align: right; line-height: 30px;}
+/*ie7*/*+html .login_box .user_name input, *+html .password_login .span4, *+html .register_box .rg_username input, *+html .register_box .rg_pw input, *+html .register_box .rg_repw input, *+html .register_box .rg_email input{ height:30px; line-height:28px;}
+.login_box form .alert{ margin-bottom:2px;}
+.login_box .forget_password{ width:260px; padding:6px 0 15px;}
+.login_box .forget_password a{ font-size:11px; display:inline-block; margin-top:13px; max-width:150px; overflow:hidden;color: #abbed2;}
+.login_box .forget_password #login_btn{ width:100px; height:40px; line-height:30px; overflow:hidden; margin-left:5px; display:inline-block; float:right;}
+/*ie7*/*+html .login_box .forget_password #login_btn{ height:30px; line-height:20px;}
+.login_box .fb_gb_login{ margin-top:15px;}
+.login_box .fb_gb_login button{ height:40px; line-height:30px; overflow:hidden; margin-left:0; width:260px; padding:4px; margin-bottom:12px;}
+.login_box .fb_gb_login .btn-warning{ margin-bottom:0;}
+.login_box .register, .register_box .login{ height:40px; width:320px; line-height:40px; text-align:center; font-size:14px; margin-top:15px; cursor:pointer;}
+.rg_username, .rg_pw, .rg_repw, .rg_email{ margin-bottom:5px; overflow:hidden;}
+.rg_username input, .rg_pw input, .rg_repw input, .rg_email input{ float:left;}
+.register_box .alert{ float:left; height:22px; line-height:24px; margin:0 0 0 10px; width:151px; overflow:hidden;}
+/*ie7*/*+html .register_box .alert{ float:left; height:10px; line-height:12px; margin:-5px 0 0 0; width:151px; overflow:hidden;}
+.register_box .rg_btn{ width:115px; margin: 30px auto;}
+/*ie7*/*+html .register_box .rg_btn{ padding-top:5px;}
+.register_box .rg_btn button{ width:115px; height:40px; overflow:hidden;}
+
+.other_login {
+	display: block;
+	position: relative;
+	height: 48px;
+	top: 30px;
+}
+/*other Login
+.other_login  .login_fb {
+	display: block;
+	cursor: pointer;
+	background-image: url(../img/newOfficial/337_ui_1.png);
+	background-repeat: no-repeat;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	text-align: center;
+	padding-top: 10px;
+	position: absolute;
+	width: 95px;
+	height: 25px;
+	background-position: -3px -90px;
+	top: 30px;
+}
+.other_login  .login_google {
+	display: block;
+	cursor: pointer;
+	background-image: url(../img/newOfficial/337_ui_1.png);
+	background-repeat: no-repeat;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	text-align: center;
+	padding-top: 10px;
+	position: absolute;
+	height: 25px;
+	width: 95px;
+	left: 100px;
+	background-position: -3px -130px;
+	top: 30px;
+}
+.other_login .third-login{
+	display: block;
+	position: relative;
+	height: 48px;
+	width:48px;
+	display: block;
+	cursor: pointer;
+	background-image: url(../img/newOfficial/third-part-login-48.png?1305241648);
+	background-repeat: no-repeat;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	text-align: center;
+	top: 30px;
+	float:left;
+	margin:2px;
+}
+.other_login .login-fb{
+	background-position: 0px 0px;
+}
+.other_login .login-google{
+	background-position: 0px -48px;
+}
+.other_login .login-orkut{
+	background-position: 0px -96px;
+}
+.other_login .login-baha{
+	background-position: 0px -240px;
+}
+.other_login .login-twitter{
+	background-position: 0px -144px;
+}
+.other_login .login-msn{
+	background-position: 0px -192px;
+}
+.other_login .login-yahoo{
+	background-position: 0px -288px;
+}
+.other_login .login-gamebase{
+	background-position: 0px -336px;
+}
+*/
+.input_status{
+	color:#B94A48;float:left;margin-left:10px;display:block;padding:2px 10px 2px 180px;width:100%
+}

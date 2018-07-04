@@ -1,0 +1,1100 @@
+body {
+	background: url(../GunnyII/images/bg-loop.gif) repeat;
+	color: #b9b0ff;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	position: relative;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+#wrapper {
+	background: url(../GunnyII/images/bg-wrapper.jpg) no-repeat center top;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100%;
+}
+.BgServer {
+	background: url(../GunnyII/images/bg-server.jpg) no-repeat center top !important;
+}
+#container {
+	margin: 0 auto 76px;
+	overflow: hidden;
+	position: relative;
+	width: 1000px;
+	z-index: 15;
+}
+#container h1.Logo {
+	left: 260px;
+	position: absolute;
+	top: 0;
+	z-index: 6;
+	height: 90px;
+	width: 200px;
+}
+.BgServer #container h1.Logo {
+	left: 385px;
+}
+#container h1.Logo a, #container h1.Logo a:hover {
+	background: url(../GunnyII/images/landingpage.swf) no-repeat;
+	display: block;
+	height: 85px;
+	width: 175px;
+	text-indent: -9999px;
+}
+#container .MenuTop {
+	position: absolute;
+	right: 87px;
+	top: 0;
+	width: 310px;
+	height: 60px;
+}
+#container .MenuTop ul {
+	width: 100%;
+}
+#container .MenuTop ul li {
+	float: left;
+}
+#container .MenuTop ul li a {
+	background: url(../GunnyII/images/menu-top.gif) no-repeat;
+	height: 60px;
+	float: left;
+	text-indent: -9999px;
+}
+#container .MenuTop ul li a.TrangChu {
+	background-position: 0 0;
+	width: 103px;
+}
+#container .MenuTop ul li a.TrangChu:hover {
+	background-position: 0 -60px;
+}
+#container .MenuTop ul li a.NapXu {
+	background-position: -103px 0;
+	width: 63px;
+}
+#container .MenuTop ul li a.NapXu:hover {
+	background-position: -103px -60px;
+}
+#container .MenuTop ul li a.DienDan {
+	background-position: -169px 0;
+	width: 72px;
+}
+#container .MenuTop ul li a.DienDan:hover {
+	background-position: -169px -60px;
+}
+#container .MenuTop ul li a.HoTro {
+	background-position: -241px 0;
+	width: 72px;
+}
+#container .MenuTop ul li a.HoTro:hover {
+	background-position: -241px -60px;
+}
+#header {
+	margin: 77px auto 0;
+	overflow: hidden;
+	width: 100%;
+	z-index: 100;
+}
+.WraperBlockNews {
+	float: left;
+	position: relative;
+}
+#main {
+	margin: 0 0 0 0px;
+	overflow: hidden;
+	position: relative;
+	width: 1000px;
+	z-index: 10;
+}
+#sidebar {
+	float: left;
+	overflow: hidden;
+	padding-top: 20px;
+	width: 220px;
+}
+#mainContent {
+	overflow: hidden;
+}
+#insideMainContent {
+	float: left;
+	overflow: hidden;
+	width: 300px;
+	margin: 0 0 0 20px;
+}
+#sidebarContent {
+	float: left;
+	overflow: hidden;
+	width: 490px;
+	margin: 0 0 0 10px;
+}
+#main #mainContent {
+	color: #B9B0FF;
+}
+.DetailEvent {
+	width: 100%;
+	overflow: hidden;
+	display: none;
+	z-index: 100;
+	margin: 0 0 0 10px;
+	position: relative;
+}
+.DetailEvent a.XemChiTiet {
+	position: absolute;
+	left: 680px;
+	top: 180px;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+.DetailEvent a.XemChiTiet1 {
+	position: absolute;
+	left: 680px;
+	top: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+/******* block tab ***********/
+#boxTab {
+	background:url(../GunnyII/images/bg-tinhnang.png) no-repeat;
+	height: 240px;
+	width: 810px;
+	margin: 0 0 0 90px;
+	float: left;
+	z-index: 10;
+	padding: 7px 0 0 10px;
+}
+ul#tabTinhNang {
+	width: 150px;
+	height: 220px;
+	float: left;
+	padding: 9px 0 0;
+}
+ul#tabTinhNang li {
+	float: left;
+	list-style-type: none;
+}
+ul#tabTinhNang li a:link, ul#tabTinhNang li a:visited {
+	background:url(../GunnyII/images/menu-tinhnang.jpg) no-repeat;
+	width: 150px;
+	display: block;
+	text-indent: -9999px;
+}
+ul#tabTinhNang li a.NhanVat:link, ul#tabTinhNang li a.NhanVat:visited {
+	background-position: 0 0;
+	height: 70px;
+}
+ul#tabTinhNang li a.NhanVat:hover, ul#tabTinhNang li.ui-state-active a.NhanVat:link, ul#tabTinhNang li.ui-state-active a.NhanVat:visited, ul#tabTinhNang li.ui-state-active a.NhanVat:hover {
+	background-position: -150px 0;
+}
+ul#tabTinhNang li a.VuKhi:link, ul#tabTinhNang li a.VuKhi:visited {
+	background-position: 0 -70px;
+	height: 80px;
+}
+ul#tabTinhNang li a.VuKhi:hover, ul#tabTinhNang li.ui-state-active a.VuKhi:link, ul#tabTinhNang li.ui-state-active a.VuKhi:visited, ul#tabTinhNang li.ui-state-active a.VuKhi:hover {
+	background-position: -150px -70px;
+}
+ul#tabTinhNang li a.ThuNuoi:link, ul#tabTinhNang li a.ThuNuoi:visited {
+	background-position: 0 -150px;
+	height: 79px;
+}
+ul#tabTinhNang li a.ThuNuoi:hover, ul#tabTinhNang li.ui-state-active a.ThuNuoi:link, ul#tabTinhNang li.ui-state-active a.ThuNuoi:visited, ul#tabTinhNang li.ui-state-active a.ThuNuoi:hover {
+	background-position: -150px -150px;
+}
+#nhanvat, #vukhi, #thunuoi {
+	float: left;
+	width: 650px;
+	height: 240px;
+	position: relative;
+}
+#nhanvat {
+	margin: 0 0 0 1px;
+}
+#vukhi {
+	background:url(../GunnyII/images/bg-vukhi.jpg) repeat-x;
+	margin: 0 0 0 1px;
+}
+.wrap-btn-playNow {
+	background:url(../GunnyII/images/bg_ga.jpg) no-repeat;
+	width: 656px;
+	height: 237px;
+}
+.wrap-flash {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:0;
+	width:1000px;
+	height:1000px
+}
+.NoneBg {
+	background: none;
+	margin: 0 0 0 2px;
+}
+/*************/
+.BlockTinTuc {
+	background:url(../GunnyII/images/block-tintuc.png) no-repeat;
+	width: 820px;
+	height: 281px;
+	margin: 0 0 0 90px;
+	float: left;
+}
+.BlockTinTucServer {
+	background:url(../GunnyII/images/block-tintuc-server.jpg) no-repeat;
+	height: 305px;
+}
+.BlockTinTuc .BlockNews {
+	width: 410px;
+	height: 250px;
+	position: relative;
+	left: 15px;
+	top: 13px;
+	float: left;
+}
+.BlockTinTucServer .BlockNews {
+	width: 410px;
+	height: 250px;
+	position: relative;
+	left: 50px;
+	top: 10px;
+	float: left;
+}
+.LeftContent {
+	background:url(../GunnyII/images/bg-dangnhap.png) no-repeat;
+	width: 540px;
+	height: 342px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	margin: 0 0 0 10px;
+}
+.NewsServer {
+	background:url(../GunnyII/images/bg-news-server.jpg) no-repeat;
+	padding: 53px 0 0 50px;
+	width: 470px;
+	height: 289px;
+}
+/*************/
+.BlockDiscuss {
+	background:url(../GunnyII/images/bg-thaoluan.jpg) no-repeat;
+	width: 350px;
+	height: 250px;
+	float: right;
+	margin: 8px 20px 0 0;
+}
+.BlockDiscuss h2.TitleDiscuss a, .BlockDiscuss h2.TitleDiscuss a:hover {
+	text-indent: -9999px;
+	display: block;
+	height: 50px;
+	width: 310px;
+	margin: 0 0 25px 40px;
+}
+.BlockDiscuss ul.InfoDiscuss {
+	width: 350px;
+	overflow: hidden;
+}
+.BlockDiscuss ul.InfoDiscuss li {
+	width: 350px;
+	float: left;
+	line-height: 24px;
+}
+.BlockDiscuss ul.InfoDiscuss li.ThaoLuan {
+	background:url(../GunnyII/images/icon-light.png) no-repeat 10px 3px;
+}
+.BlockDiscuss ul.InfoDiscuss li.ChuY {
+	background:url(../GunnyII/images/icon-note.png) no-repeat 13px 10px;
+}
+.BlockDiscuss ul.InfoDiscuss li.LuaChon {
+	background:url(../GunnyII/images/icon-like.png) no-repeat 10px 3px;
+}
+.BlockDiscuss ul.InfoDiscuss li.BieuTuongVui {
+	background:url(../GunnyII/images/icon-smile.png) no-repeat 10px 3px;
+}
+.BlockDiscuss ul.InfoDiscuss li a {
+	padding: 0 0 0 35px;
+	width: 305px;
+	display: block;
+	color: #4d1900;
+}
+.BlockDiscuss ul.InfoDiscuss li a:hover {
+	font-weight: bold;
+	text-decoration: none;
+}
+.BlockDiscuss ul.InfoDiscuss li a .LuotXem, .BlockDiscuss ul.InfoDiscuss li a:hover .LuotXem {
+	float: right;
+	font-weight: normal;
+}
+/***************/
+.Footer {
+	margin: 0 0 0 100px;
+	float: left;
+	position: relative;
+	height: 84px;
+}
+.Footer a.LogoVNG, .Footer a.LogoVNG:hover {
+	background:url(../GunnyII/images/logovng.png) no-repeat;
+	width: 45px;
+	height: 61px;
+	position: absolute;
+	left: 169px;
+	top: 9px;
+	display: block;
+	text-indent: -9999px;
+}
+.Footer a.Logo7Road, .Footer a.Logo7Road:hover {
+	background:url(../GunnyII/images/logo7road.png) no-repeat;
+	width: 39px;
+	height: 39px;
+	position: absolute;
+	left: 231px;
+	top: 19px;
+	display: block;
+	text-indent: -9999px;
+}
+.Footer p.Copyright {
+	width: 430px;
+	height: 50px;
+	position: absolute;
+	left: 278px;
+	top: 24px;
+	text-align: center;
+	font-size: 11px;
+	color: #000;
+	line-height: 15px;
+}
+/*Wow */
+ul.WoW {
+	display: block;
+	overflow: hidden;
+	padding: 35px 0 30px 100px;
+	width: 220px;
+	float: left;
+	position: absolute;
+	z-index: 50;
+}
+ul.WoW li {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin: 0 5px 5px 0;
+	display: block;
+	overflow: hidden;
+}
+ul.WoW li a:link, ul.WoW li a:visited {
+	display: block;
+	opacity: 0.4;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 50px;
+	height: 50px;
+	background: url(../GunnyII/images/nhan-vat/loai-vukhi-nor.png) no-repeat;
+}
+ul.WoW li a:hover, ul.WoW li.Active a, ul.WoW li.Active a:hover {
+	background: url(../GunnyII/images/nhan-vat/loai-vukhi.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	opacity: 1;
+}
+ul.WoW li a.LongThuong:link, ul.WoW li a.LongThuong:visited {
+	background-position: 0 0;
+}
+ul.WoW li a.LongThuong:hover {
+	background-position: 0 0;
+}
+ul.WoW li a.Bua:link, ul.WoW li a.Bua:visited {
+	background-position: -50px 0;
+}
+ul.WoW li a.Bua:hover {
+	background-position: -50px 0;
+}
+ul.WoW li a.SBoomerang:link, ul.WoW li a.SBoomerang:visited {
+	background-position: -100px 0;
+}
+ul.WoW li a.SBoomerang:hover {
+	background-position: -100px 0;
+}
+ul.WoW li a.LuuDan:link, ul.WoW li a.LuuDan:visited {
+	background-position: -150px 0;
+}
+ul.WoW li a.LuuDan:hover {
+	background-position: -150px 0;
+}
+ul.WoW li a.LuGach:link, ul.WoW li a.LuGach:visited {
+	background-position: 0 -50px;
+}
+ul.WoW li a.LuGach:hover {
+	background-position: 0 -50px;
+}
+ul.WoW li a.SamSet:link, ul.WoW li a.SamSet:visited {
+	background-position: -50px -50px;
+}
+ul.WoW li a.SamSet:hover {
+	background-position: -50px -50px;
+}
+ul.WoW li a.Phao:link, ul.WoW li a.Phao:visited {
+	background-position: -100px -50px;
+}
+ul.WoW li a.Phao:hover {
+	background-position: -100px -50px;
+}
+ul.WoW li a.PhiTieu:link, ul.WoW li a.PhiTieu:visited {
+	background-position: -150px -50px;
+}
+ul.WoW li a.PhiTieu:hover {
+	background-position: -150px -50px;
+}
+ul.WoW li a.TuThuoc:link, ul.WoW li a.TuThuoc:visited {
+	background-position: 0 -100px;
+}
+ul.WoW li a.TuThuoc:hover {
+	background-position: 0 -100px;
+}
+ul.WoW li a.TraiCay:link, ul.WoW li a.TraiCay:visited {
+	background-position: -50px -100px;
+}
+ul.WoW li a.TraiCay:hover {
+	background-position: -50px -100px;
+}
+ul.WoW li a.Tivi:link, ul.WoW li a.Tivi:visited {
+	background-position: -100px -100px;
+}
+ul.WoW li a.Tivi:hover {
+	background-position: -100px -100px;
+}
+ul.WoW li a.VuKhi:link, ul.WoW li a.VuKhi:visited {
+	background-position: -150px -100px;
+}
+ul.WoW li a.VuKhi:hover {
+	background-position: -150px -100px;
+}
+.BgBottom {
+	background: url(../GunnyII/images/bg-grass.png) no-repeat left top;
+	position: absolute;
+	width: 650px;
+	height: 238px;
+	top: 0;
+	z-index: 10;
+}
+.ShowNhanVat {
+	width: 220px;
+	height: 230px;
+	overflow: hidden;
+	display: block;
+	z-index: 50;
+	position: absolute;
+	left: 325px;
+	padding: 4px 0 0;
+}
+/*****************/
+.frm_dangnhap {
+	left: 25px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 120px;
+	width: 305px;
+	z-index: 31;
+}
+.frm_dangnhap label {
+	float: left;
+	width: 118px;
+	padding: 0 7px 0 0;
+	text-align: right;
+	color: #000;
+	font-weight: bold;
+}
+.frm_dangnhap input.txt_box {
+	border: 1px solid #ccc;
+	;
+	background: #fff;
+	;
+	height: 16px;
+	line-height: 18px;
+	margin: 0 0 8px !important;
+	padding: 2px 0 2px 3px;
+	width: 175px;
+	float: left;
+}
+.frm_button {
+	left: 340px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 70px;
+	width: 130px;
+	z-index: 32;
+}
+input.txt_box {
+	border: 1px solid #ccc;
+	background: #FFF;
+	height: 15px;
+	line-height: 18px;
+	margin: 4px 0 5px !important;
+	padding: 2px 0 2px 3px;
+	width: 114px;
+}
+.LeftContent a.QuenMK {
+	position: absolute;
+	top: 175px;
+	left: 150px;
+	width: 200px;
+	height: 20px;
+	color: #265000;
+	font-weight: bold;
+}
+.LeftContent a.QuenMK:hover {
+	text-decoration: underline;
+}
+.LuuY {
+	left: 40px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 210px;
+	padding: 0px 0 0 ;
+	width: 440px;
+}
+form div.LuuY p.TextWarning {
+	text-align: center;
+	color: #265000;
+	font-size: 11px;
+	
+}
+form div.LuuY p.TextWarning span {
+	line-height: 40px;
+}
+form div.LuuY p.TextWarning a:hover {
+	color: #BA0000;
+	text-decoration:none;
+}
+input.ChoiNgay {
+	background: url(../GunnyII/images/choingay.gif) no-repeat;
+	text-indent: -9999px;
+	display: block;
+	width: 130px;
+	height: 101px;
+	margin: 0;
+	border: none;
+	padding:0;
+	cursor: pointer;
+}
+input.ChoiNgay:hover {
+	background-position: 0 -101px;
+}
+.BlockNewUser {
+	width: 360px;
+	position: absolute;
+	left: 170px;
+	top: 300px;
+}
+.BlockNewUser .Question {
+	color: #f7392e;
+	font-weight: bold;
+	float: left;
+	padding: 0 0 5px 5px;
+}
+.BlockNewUser ul.BtnNewUser {
+	width: 100%;
+	float: left;
+}
+.BlockNewUser ul.BtnNewUser li {
+	float: left;
+	margin: 0 10px 0 0;
+}
+.BlockNewUser ul.BtnNewUser li a.DKNhanh:link, .BlockNewUser ul.BtnNewUser li a.DKNhanh:visited {
+	background: url(../GunnyII/images/btn-new-user.gif) no-repeat;
+	float: left;
+	text-indent: -9999px;
+	width: 150px;
+	height: 40px;
+}
+.BlockNewUser ul.BtnNewUser li a.DKNhanh:hover {
+	background-position: 0 -40px;
+}
+ a.HDNew:link,
+ a.HDNew:visited {
+	background: url(../GunnyII/images/btn-new-user.gif) no-repeat -150px 0;
+	float: right;
+	text-indent: -9999px;
+	width: 190px;
+	height: 40px;
+	margin: 0 0 0 10px;
+	
+}
+ a.HDNew:hover {
+	background-position: -150px -40px;
+}
+
+.BlockNewUser ul.BtnNewUser li a.HDNew:link, .BlockNewUser ul.BtnNewUser li a.HDNew:visited {
+	background: url(../GunnyII/images/btn-new-user.gif) no-repeat -150px 0;
+	float: left;
+	text-indent: -9999px;
+	width: 190px;
+	height: 40px;
+}
+
+
+.BlockNewUser ul.BtnNewUser li a.HDNew:hover {
+	background-position: -150px -40px;
+}
+/*****popup*****/
+.SurveyPopup {
+	height: 400px;
+	overflow: hidden;
+	position: absolute;
+	width: 405px;
+	z-index: 1001;
+}
+.SurveyPopupHome .SurveyClose {
+	background: url(../GunnyII/images/close1.gif) no-repeat;
+	display: block;
+	height: 23px;
+	overflow: hidden;
+	position: absolute;
+	left: 355px;
+	text-indent: -999px;
+	top: 25px;
+	width: 25px;
+}
+/***********/
+.Popup {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	display: block;
+	background:#752424;
+	width: 660px;
+	padding: 40px 0 0;
+	z-index: 1000;
+	display: none;
+}
+.Popup .PopupClose:hover {
+	text-decoration: none;
+}
+.opaEff {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	opacity: 0.5;
+	background: #05112a;
+	width: 100%;
+	height: 100%;
+	_height: 1100px;
+	filter:alpha(opacity=50);
+	display: none;
+}
+.visible {
+	display: block;
+}
+.titleTop {
+	margin-top: -32px;
+	margin-left: 10px;
+	color: #e6e0d8;
+	font-size: 16px;
+	font-weight: 700;
+	position: absolute;
+}
+.titleTop span {
+	text-transform: uppercase;
+}
+.Popup .PopupWrapper {
+	height: 460px;
+	background: #e6e0d8;
+}
+.Popup .InnerContent {
+	height: 460px;
+	overflow: hidden;
+	padding: 0;
+	background: #fff;
+}
+.Popup .Title {
+	position: absolute;
+	top: -30px;
+	left: 10px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+}
+.Popup .PopupWrapper {
+	position: relative;
+	width: 100%;
+}
+.Popup .PopupClose:link, .Popup .PopupClose:visited {
+	position: absolute;
+	top: -32px;
+	right: 0px;
+	display: block;
+	width: 30px;
+	font-size: 34px;
+	height: 30px;
+	color: #fff;
+}
+.Popup .PopupClose:link {
+	text-decoration: none;
+}
+/*******Server*********/
+.NewServer {
+	width: 420px;
+	margin: 73px 0 0 230px;
+}
+.NewServer a {
+	background:url(../GunnyII/images/bg-servernew.jpg) no-repeat;
+	width: 230px;
+	height: 55px;
+	padding: 45px 0 0 130px;
+	text-transform: uppercase;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #001424;
+}
+.NewServer a:hover {
+	background-position: 0 -100px;
+	text-decoration: none;
+}
+.InfoServer {
+	width: 480px;
+	margin: 0 0 0 170px;
+}
+.UserInfo {
+	color: #705800;
+	display: block;
+	font-size: 12px;
+	height: 25px;
+	margin: 5px 0 0;
+}
+.UserInfo p {
+	font-weight: bold;
+	float: left;
+	overflow: hidden;
+	padding: 0 0 0 220px;
+	width: 185px;
+	overflow: hidden;
+}
+.UserInfo p .Username {
+	color: #ae3900;
+}
+.UserInfo a:link, .UserInfo a:visited {
+	color: #705800;
+	padding: 0 35px 0 0;
+	float: right;
+	font-weight: bold;
+}
+.UserInfo a:hover {
+	text-decoration: underline;
+}
+.ListServer {
+	width: 480px;
+	margin: 0 0 74px 200px;
+	overflow: hidden;
+	position: relative;	
+}
+ul.Tab {
+	height: 41px;
+	width: 422px;
+	overflow: hidden;
+	position: absolute;
+	left: 10px;
+	top: 0px;
+}
+ul.Tab li {
+	float: left;
+	font-size: 12px;
+	line-height: 19px;
+	font-weight: bold;
+	margin: 15px 4px 0 0;
+}
+ul.Tab li a {
+	display:block;
+	padding:0 0 0 8px;
+	background:url(../GunnyII/images/tab-news-unactive-left.gif) 0 0px no-repeat;
+	color:#b1d24a;
+	text-decoration:none;
+}
+ul.Tab li a span {
+	display:block;
+	padding:3px 8px 3px 0px;
+	background:url(../GunnyII/images/tab-news-unactive-right.gif) no-repeat top right;
+	color:#b1d24a;
+}
+ul.Tab li a:hover {
+	background-position:bottom left;
+	color:#b23600;
+	text-decoration:none;
+}
+ul.Tab li a:hover span {
+	background-position:bottom right;
+	color:#b23600;
+	text-decoration:none;
+	background:url(../GunnyII/images/tab-news-active-right.gif) no-repeat bottom right;
+}
+ul.Tab li.ui-state-active a, ul.Tab li a:hover {
+	background:url(../GunnyII/images/tab-news-active-left.gif) 0 0 no-repeat;
+	color:#ceab73;
+	cursor:pointer;
+	padding:0 0 0 8px;
+}
+ul.Tab li.ui-state-active a span, ul.Tab li a:hover span {
+	background:url(../GunnyII/images/tab-news-active-right.gif) no-repeat bottom right;
+	color:#b23600;
+	cursor:pointer;
+}
+.ContentTab h3 {
+	font-size: 12px;
+	background:url(../GunnyII/images/icon-server.png) no-repeat;
+	padding-left: 25px;
+	margin:5px 0;
+	height: 26px;
+	clear: both;
+	color: #000;
+}
+#nav {
+	background: url(../GunnyII/images/chon-may-chu.gif) no-repeat;
+	overflow: hidden;
+	width: 420px;
+	padding: 0 0 30px;
+	float: left;
+	clear: both;
+}
+ul#tabHeader {
+	height: 40px;
+	overflow: hidden;
+	width: 100%;
+}
+#boxTab ul#tabHeader {
+	margin: 0;
+}
+ul#tabHeader li {
+	float: left;
+	font-weight: bolder;
+	line-height: 20px;
+	overflow: hidden;
+	width: 68px;
+	height: 30px;
+	margin: 10px 3px 0 0;
+}
+ul#tabHeader li a:link, ul#tabHeader li a:visited {
+	background: url(../GunnyII/images/bt-tab.gif) no-repeat 0px 0px;
+	cursor: pointer;
+	float: left;
+	width: 68px;
+	height: 30px;
+	text-decoration: none;
+	color: #b1d24a;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 28px;	
+}
+ul#tabHeader li.Last a:link, ul#tabHeader li.Last a:visited {
+	background: url(../GunnyII/images/bt-tab.gif) no-repeat 0px 0px;
+}
+ul#tabHeader li.ui-tabs-selected a:link, ul#tabHeader li.ui-tabs-selected a:visited, ul#tabHeader li.ui-state-active a:link, ul#tabHeader li.ui-state-active a:visited, ul#tabHeader li.ui-tabs-selected.Last a:link, ul#tabHeader li.ui-tabs-selected.Last a:visited, ul#tabHeader li.ui-state-active.Last a:link, ul#tabHeader li.ui-state-active.Last a:visited {
+	background-position: 0 -30px;
+	color: #b23600;
+}
+ul#tabHeader li a:hover, ul#tabHeader li.Last a:hover {
+	background-position: 0 -30px;
+	color: #b23600;
+}
+ul#tabHeader li.Active a:link, ul#tabHeader li.Active a:visited, ul#tabHeader li.Active.Last a:link, ul#tabHeader li.Active.Last a:visited {
+	background-position: 0 -30px;
+	color: #b23600;
+}
+#nav ul.ServerList {
+	list-style:none;
+	overflow:hidden;
+	display: none;
+	margin: 10px 0 0;
+}
+#nav ul.ServerList.Active {
+	display: block;
+}
+#nav ul.ServerList li {
+	float:left;
+	margin:0 0 5px 15px;
+	position:relative;
+}
+#nav ul.ServerList li a:link, #nav ul.ServerList li a:visited {
+	background: url(../GunnyII/images/button-server1.png) no-repeat;
+	color: #000;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 24px;
+	padding: 12px 0 12px 52px;
+	text-decoration: none;
+	width: 132px;
+}
+#nav ul.ServerList li a:hover {
+	background: url(../GunnyII/images/button-server1-o.png) no-repeat;
+}
+#nav ul.ServerList li a span {
+	color: #fff000;
+	display: block;
+	font-size: 11px;
+	font-weight:bold;
+	line-height: 24px;
+	padding-right:4px;
+	float:left;
+	position:absolute;
+	top:12px;
+	left:24px;
+	width:20px;
+	height:30px;
+}
+#nav ul.ServerList li span.Check {
+	background: url(../GunnyII/images/check.png) no-repeat;
+	position: absolute;
+	right: 8px;
+	top: 15px;
+	width: 24px;
+	height: 21px;
+}
+#nav p.flashwarning {
+	text-align:center;
+}
+.iconNew {
+	background: url(../GunnyII/images/icon-new.png) no-repeat;
+	display: block;
+	height: 33px;
+	position: absolute;
+	right: 0px;
+	text-indent: -9999px;
+	top: 7px;
+	width: 41px;
+	z-index: 40;
+}
+.iconBaotri {
+	background: url(../GunnyII/images/icon-baotri.gif) no-repeat;
+	display: block;
+	height: 9px;
+	position: absolute;
+	right: 10px;
+	text-indent: -9999px;
+	top: 4px;
+	width: 33px;
+	z-index: 42;
+}
+.iconTot {
+	background:url(../GunnyII/images/icon-tot.png) no-repeat;
+	display:block;
+	height:45px;
+	left:27px;
+	position:absolute;
+	text-indent:-9999px;
+	top:21px;
+	width:147px;
+	z-index:4;
+}
+/* Pagination */
+.PagingWrapper {
+	width: 100%;
+	overflow: hidden;
+	padding: 20px 0;
+	margin-bottom: 10px;
+}
+.PagingControl {
+	position: relative;
+	left: -50%;
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+.CenterWrapper {
+	position: relative;
+	left: 50%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.PagingControl span.PagingPrevPageLnk, .PagingControl span.PagingNextPageLnk, .PagingControl a.PagingPrevPageLnk, .PagingControl a.PagingNextPageLnk {
+	display: block;
+	width: 24px;
+	height: 0;
+	padding: 14px 0 10px;
+	overflow: hidden;
+	text-indent: -1000em;
+	float: left;
+	position: relative;
+}
+.PagingControl span.PagingPrevPageLnk, .PagingControl span.PagingNextPageLnk {
+	opacity: 0.3;
+	-moz-opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+/* Normal states */
+.PagingControl span.PagingPrevPageLnk, .PagingControl a.PagingPrevPageLnk {
+	width: 24px;
+	margin: 0 17px 0 0;
+	background: url(../GunnyII/images/bt_pre.gif) 0 0 no-repeat
+}
+.PagingControl span.PagingNextPageLnk, .PagingControl a.PagingNextPageLnk {
+	width: 24px;
+	margin: 0 0 0 17px;
+	border-right: none;
+	background: url(../GunnyII/images/bt_next.gif) 0 0 no-repeat
+}
+/* Hover&Disabled states */
+		
+		.PagingControl a.PagingPrevPageLnk:hover {
+	background-position: 0 -24px;
+}
+.PagingControl a.PagingNextPageLnk:hover {
+	background-position: 0 -24px;
+}
+/* Number list */
+.PagingControl ul.PageList {
+	float: left;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.PagingControl ul.PageList li {
+	float: left;
+	padding: 0;
+	margin: 0 5px;
+	overflow: hidden;
+}
+.PagingControl ul.PageList li span { /* active item */
+	display: block;
+	float: left;
+	line-height: 24px;
+	width: 24px;
+	height: 24px;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	color: #FFF;	
+	background: url(../GunnyII/images/bt_page.gif) no-repeat -24px 0;
+}
+.PagingControl ul.PageList li a:link, .PagingControl ul.PageList li a:visited {
+	display: block;
+	float: left;
+	white-space: nowrap;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	text-align: center;
+	color: #c03b00;
+	font-weight: bold;
+	background: url(../GunnyII/images/bt_page.gif) no-repeat;
+	text-decoration: none;	
+}
+.PagingControl ul.PageList li a:hover { /* active item */
+	background-position: -24px 0;
+	color: #fff;
+}
+/* END. Pagination */

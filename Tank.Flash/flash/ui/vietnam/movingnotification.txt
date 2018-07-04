@@ -1,0 +1,78 @@
+﻿O Leilão é onde os itens ilimitados podem ser leiloados e podem 
+ser trocados usando o método Pagando por email.
+Alguns itens e equipamentos só podem ser comprados com Cupons, 
+os quais podem ser carregados no Centro Comercial ou Apertando o 
+botão Comprar Cupons.
+Os cupons também podem ser doados para a Sociedade, aumentando 
+a adição no ferreiro da sociedade.
+Caso não esteja vendo claramente todas as condições do cenário 
+você pode apertar {T} para o modo transparente.
+A busca por um bom oponente para lutar com você pode demorar um
+pouco,por favor espere pacientemente.
+Quando você estiver em um lugar desfavorável durante a batalha você pode voar 
+para um lugar melhor clicando no botão de vôo ou pressionando {F}. 
+Esta manobra só pode ser feita uma vez a cada 2 rodadas.
+Os jogadores cujo nível é maior que 12 e possuem 100000 moedas de ouro,
+ podem criar sociedade no clube da sociedade.
+Os jogadores que não pertencem a nenhuma sociedade podem se aplicar para
+ entrar em uma sociedade.
+Um jogador pode se aplicar para várias sociedades ao mesmo tempo. 
+O nome da sociedade não pode ser mudado facilmente, somente usando-se o 
+cartão de mudança de nome da sociedade que é vendido no centro comercial.
+O novo nome será atualizado em 24h.
+Clicando em "Central de Expedições" você pode lutar nas instâncias remotas 
+com todos os monstros, podendo obter boas recompensas.
+Aperte no "botão de espaço" para controlar a força do lançamento.
+Quanto mais você apertar, mais forte irá lançar e mais longe alcançará.
+Use {↑↓} para controlar o ângulo.
+Ajustar o ângulo de acordo com as condições é a chave para a vitória.
+Use {←→} para mover a personagem. Quando você não possui as condições 
+de ângulo favoráveis ou se foi atingido mover-se é a melhor opção.
+Para sua segurança não compartilhe sua conta com outros.
+ Não faça transações com jogadores que estiverem offline.
+Por favor ative a segunda senha da mochila assim que possível.
+Jogar por um tempo é até saudável mas não ultrapasse limites,
+ pois sua saúde pode ser prejudicada.
+Recomendamos que você jogue, mas tenha um tempo de descanso.
+Existe um risco de falha no processo de reforçamento de equipamentos e armas. 
+Níveis diferentes de pedras de reforçamento possuem diferentes índices de êxito. 
+Por favor cheque este índice antes do reforçamento.
+Com o amuleto da sorte e símbolo o resultado do fortalecimento será melhor.
+A fim de tornar o processo de reforço e composição mais conveniente criamos 
+um atalho para que você compre o amuleto da sorte e o símbolo
+ dos deuses na sala do Ferreiro.
+A fim de garantir um melhor ambiente não use softwares ilícitos para jogar. 
+Se alguma evidência de uso de softwares ilícitos for encontrada na conta 
+do jogador tomaremos medidas de punição.
+Você pode salvar o link do jogo em favoritos ou na página inicial do jogo
+clicar no botão favoritos para facilitar a entrada no mesmo mais tarde.
+Em caso de travamento de tela tente clicar com o botão direito do mouse na 
+tela e selecione configurações para aumentar o tamanho do armazenamento local. 
+Em caso de travamento de tela tente tente clicar no botão de configuração
+ de jogo para desativar os efeitos especiais.
+Se ainda assim não conseguir resolver o problema,contate o suporte 
+no forum do jogo.
+Neste jogo preparamos vários tipos de tarefas para você.
+Quanto mais alto for seu nível mais alto serão as recompensas pelas tarefas.
+Escolher tarefas que você possa completar de acordo com as suas
+ características é um atalho para um rápido aumento de nível
+No centro comercial você pode clicar nos itens,testá-los e salvar a 
+imagem para comprar.
+No centro comercial você também pode directamente colocar os itens no
+carrinho e comprá-los. Não se esqueça de checar a validade dos itens.
+Quando o jogador sai da batalha abruptamente independente do motivo
+perderá um número definido de méritos.
+Modo não normais incluindo:saida forçada,fecho do servidor e desconectar.
+Quando se luta em time combates competitivos, quanto maior o número de
+ jogadores maiores são os pontos de experiência obtidos.
+Emails mandados pelo GM possuem um ícone especial. Preste atenção quando
+receber emails do sistema para evitar perdas.
+Se decidir lutar com um oponente de outro servidor o sistema encontrará 
+mais facilmente um oponente com características semelhantes a você.
+Se você não puder ficar lutando por estar ocupado você pode ir para o
+quarto do spa onde você receberá pontos de experiência.
+Atualmente o nível máximo para jóias e pedras de reforço} é 5 e
+este não pode ser aumentado por fusão,por favor faça atenção.
+Durante o jogo se você encontrar problemas ou tiver alguma dúvida,
+você pode reportá-los através do serviço de reclamações dentro do jogo.
+As dúvidas, sugestões e problemas serão resolvidos o mais rápido possível.

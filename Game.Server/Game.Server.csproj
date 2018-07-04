@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{12C89838-F012-4548-8E46-AC4F507B8988}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Game.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="log4net">
+      <HintPath>..\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game.Base.Packets\AbstractPacketLib.cs" />
+    <Compile Include="Game.Base.Packets\IPacketLib.cs" />
+    <Compile Include="Game.Base.Packets\PacketLibAttribute.cs" />
+    <Compile Include="Game.Base.Packets\PacketProcessor.cs" />
+    <Compile Include="Game.Server.Battle\BattleMgr.cs" />
+    <Compile Include="Game.Server.Battle\BattleServer.cs" />
+    <Compile Include="Game.Server.Battle\FightServerConnector.cs" />
+    <Compile Include="Game.Server.Battle\ProxyGame.cs" />
+    <Compile Include="Game.Server.Buffer\AbstractBuffer.cs" />
+    <Compile Include="Game.Server.Buffer\BufferList.cs" />
+    <Compile Include="Game.Server.Buffer\GPMultipleBuffer.cs" />
+    <Compile Include="Game.Server.Buffer\KickProtectBuffer.cs" />
+    <Compile Include="Game.Server.Buffer\OfferMultipleBuffer.cs" />
+    <Compile Include="Game.Server.Buffer\PropsBuffer.cs" />
+    <Compile Include="Game.Server.ChatServer\eChatServerPacket.cs" />
+    <Compile Include="Game.Server.Commands.Admin\ListObjectsCommand.cs" />
+    <Compile Include="Game.Server.Commands.Admin\ReloadCommand.cs" />
+    <Compile Include="Game.Server.Enumerate\eConsumerType.cs" />
+    <Compile Include="Game.Server.Enumerate\eSubConsumerType.cs" />
+    <Compile Include="Game.Server.GameObjects\GamePlayer.cs" />
+    <Compile Include="Game.Server.Games\GameMgr.cs" />
+    <Compile Include="Game.Server.GameUtils\AbstractInventory.cs" />
+    <Compile Include="Game.Server.GameUtils\CardAbstractInventory.cs" />
+    <Compile Include="Game.Server.GameUtils\CardInventory.cs" />
+    <Compile Include="Game.Server.GameUtils\PetAbstractInventory.cs" />
+    <Compile Include="Game.Server.GameUtils\PetInventory.cs" />
+    <Compile Include="Game.Server.GameUtils\PlayerBeadInventory.cs" />
+    <Compile Include="Game.Server.GameUtils\PlayerEquipInventory.cs" />
+    <Compile Include="Game.Server.GameUtils\PlayerFarm.cs" />
+    <Compile Include="Game.Server.GameUtils\PlayerFarmInventory.cs" />
+    <Compile Include="Game.Server.GameUtils\PlayerInventory.cs" />
+    <Compile Include="Game.Server.GameUtils\Scene.cs" />
+    <Compile Include="Game.Server.Managers\AntiAddictionMgr.cs" />
+    <Compile Include="Game.Server.Managers\AwardMgr.cs" />
+    <Compile Include="Game.Server.Managers\CardMgr.cs" />
+    <Compile Include="Game.Server.Managers\ConsortiaMgr.cs" />
+    <Compile Include="Game.Server.Managers\DiceSystemInfo.cs" />
+    <Compile Include="Game.Server.Managers\DiceSystemItem.cs" />
+    <Compile Include="Game.Server.Managers\DiceSystemMgr.cs" />
+    <Compile Include="Game.Server.Managers\eRateType.cs" />
+    <Compile Include="Game.Server.Managers\FightRateMgr.cs" />
+    <Compile Include="Game.Server.Managers\FusionMgr.cs" />
+    <Compile Include="Game.Server.Managers\LevelMgr.cs" />
+    <Compile Include="Game.Server.Managers\LoginMgr.cs" />
+    <Compile Include="Game.Server.Managers\MacroDropMgr.cs" />
+    <Compile Include="Game.Server.Managers\MarryRoomMgr.cs" />
+    <Compile Include="Game.Server.Managers\RateMgr.cs" />
+    <Compile Include="Game.Server.Managers\RefineryMgr.cs" />
+    <Compile Include="Game.Server.Managers\StrengthenMgr.cs" />
+    <Compile Include="Game.Server.Managers\WorldMgr.cs" />
+    <Compile Include="Game.Server.Packets.Client\AASInfoSetHandle.cs" />
+    <Compile Include="Game.Server.Packets.Client\ACActionHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\AuctionAddHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\AuctionDeleteHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\AuctionUpdateHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\BattleGroundHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\BeadHandle.cs" />
+    <Compile Include="Game.Server.Packets.Client\BigBugleHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\CaddyClearAllHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\CaddyConvertedHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\CardDataHander.cs" />
+    <Compile Include="Game.Server.Packets.Client\CardInfoHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\CardResetHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\CardSlotHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\CardUseHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ChangeColorShellTimeOverHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ChangeDesignationHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\CheckCodeHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ClientErrorLog.cs" />
+    <Compile Include="Game.Server.Packets.Client\ConsortiaHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\DailyAwardHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\DefyAfficheHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\DiceSystemHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\DivorceApplyHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\EnterFarmHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\EquipRetrieveHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\FigSpiritUpGradeHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ForSwitchHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\GameDataHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\GameInviteHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\GameRoomHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\GameTakeTempItemsHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\GameUserStartHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\GetTimeBoxHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\HonorUpHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\IMHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\IPacketHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ItemCompareHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ItemComposeHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ItemFusionHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ItemOverdueHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ItemReclaimHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ItemRefineryHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ItemStrengthenHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ItemTransferHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\ItemTrendHandle.cs" />
+    <Compile Include="Game.Server.Packets.Client\LabyrinthHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\LatentEnergyHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\LittleGameHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\LookupEffortHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\LotteryFinishBoxHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\LotteryGetItem.cs" />
+    <Compile Include="Game.Server.Packets.Client\LotteryOpenBoxHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\LuckStoneEnableHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MailGetAttachHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MailPaymentCancelHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryApplyHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryApplyReplyHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryDataHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryInfoAddHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryInfoDeleteHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryInfoGetHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryInfoUpdateHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryRoomCreateHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryRoomInfoUpdateHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryRoomLoginHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarrySceneChangeHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryStateHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MarryStatusHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MateTimeHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\MoveGoodsAllHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\NewChickenBoxHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\OpenOneTotemHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\OpenUpArkHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\OpenVipHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\OptionHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\PacketHandlerAttribute.cs" />
+    <Compile Include="Game.Server.Packets.Client\PassWordTwoHandle.cs" />
+    <Compile Include="Game.Server.Packets.Client\PetHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\PingTimeCallBackHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\PlayerGiftHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\PowerPack.cs" />
+    <Compile Include="Game.Server.Packets.Client\PropBuyHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\PropDeleteHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\PropSellHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\QequestBadLuckHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\QuestAddHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\QuestCheckHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\QuestFinishHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\QuestRemoveHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\QuickBuyGoldBoxHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\RequestAwardsHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\SaveToDB.cs" />
+    <Compile Include="Game.Server.Packets.Client\SceneChangeChannel.cs" />
+    <Compile Include="Game.Server.Packets.Client\SceneChatHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\SceneSmileHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\SceneUsersListHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\SignAwardHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\SmallBugleHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\StoreClearItemHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\StoreItemHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\SyncSystemDateHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\TexpHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\TreasureHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UpdateGoodsCountHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UseLogHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserAnswerHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserBuyItemHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserChangeItemColorHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserChangeItemPlaceHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserDeleteItemHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserDeleteMailHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserEnterMarrySceneHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserEnterSceneHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserEquipListHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UseReworkNameHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserHideItemHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserItemContineueHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserLeaveMarryRoom.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserLeaveSceneHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserLoginHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserLuckyNumHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserPresentGoodsHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserPrivateChatHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserSellItemHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserSendMailHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserSynchActionHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserUnchainItemHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserUpdateMailHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\UserWeeklyClickHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\WishBeadEquipHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\WonderfulActivityHandler.cs" />
+    <Compile Include="Game.Server.Packets.Client\WorldBossHandler.cs" />
+    <Compile Include="Game.Server.Packets.Server\ConsolePacketLib.cs" />
+    <Compile Include="Game.Server.Packets\ActivityPackageType.cs" />
+    <Compile Include="Game.Server.Packets\BattleGoundPackageType.cs" />
+    <Compile Include="Game.Server.Packets\ConsortiaPackageType.cs" />
+    <Compile Include="Game.Server.Packets\DicePackageType.cs" />
+    <Compile Include="Game.Server.Packets\eDutyRightType.cs" />
+    <Compile Include="Game.Server.Packets\EliteGamePackageType.cs" />
+    <Compile Include="Game.Server.Packets\eMailRespose.cs" />
+    <Compile Include="Game.Server.Packets\eMailType.cs" />
+    <Compile Include="Game.Server.Packets\eMarryApplyType.cs" />
+    <Compile Include="Game.Server.Packets\eMessageType.cs" />
+    <Compile Include="Game.Server.Packets\ePackageType.cs" />
+    <Compile Include="Game.Server.Packets\ePetType.cs" />
+    <Compile Include="Game.Server.Packets\ePlayerState.cs" />
+    <Compile Include="Game.Server.Packets\EquipType.cs" />
+    <Compile Include="Game.Server.Packets\FarmPackageType.cs" />
+    <Compile Include="Game.Server.Packets\FightSpiritPackageType.cs" />
+    <Compile Include="Game.Server.Packets\GameRoomPackageType.cs" />
+    <Compile Include="Game.Server.Packets\IMPackageType.cs" />
+    <Compile Include="Game.Server.Packets\LabyrinthPackageType.cs" />
+    <Compile Include="Game.Server.Packets\LittleGamePackageIn.cs" />
+    <Compile Include="Game.Server.Packets\LittleGamePackageOut.cs" />
+    <Compile Include="Game.Server.Packets\NewChickenBoxPackageType.cs" />
+    <Compile Include="Game.Server.Packets\NewChickenType.cs" />
+    <Compile Include="Game.Server.Packets\RechargePackageType.cs" />
+    <Compile Include="Game.Server.Packets\RuneType.cs" />
+    <Compile Include="Game.Server.Packets\TreasurePackageType.cs" />
+    <Compile Include="Game.Server.Packets\TrusteeshipPackageType.cs" />
+    <Compile Include="Game.Server.Packets\WorldBossGamePackageType.cs" />
+    <Compile Include="Game.Server.Packets\WorldBossPackageType.cs" />
+    <Compile Include="Game.Server.Quests\AccuontInfoCondition.cs" />
+    <Compile Include="Game.Server.Quests\AchievementCondition.cs" />
+    <Compile Include="Game.Server.Quests\AdoptPetCondition.cs" />
+    <Compile Include="Game.Server.Quests\BaseCondition.cs" />
+    <Compile Include="Game.Server.Quests\BaseQuest.cs" />
+    <Compile Include="Game.Server.Quests\CashCondition.cs" />
+    <Compile Include="Game.Server.Quests\ClientModifyCondition.cs" />
+    <Compile Include="Game.Server.Quests\CombiePetFeedCondition.cs" />
+    <Compile Include="Game.Server.Quests\CropPrimaryCondition.cs" />
+    <Compile Include="Game.Server.Quests\DirectFinishCondition.cs" />
+    <Compile Include="Game.Server.Quests\EnterSpaCondition.cs" />
+    <Compile Include="Game.Server.Quests\FightWifeHusbandCondition.cs" />
+    <Compile Include="Game.Server.Quests\FightWithPetCondition.cs" />
+    <Compile Include="Game.Server.Quests\FinishGameCondition.cs" />
+    <Compile Include="Game.Server.Quests\FriendFarmCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameCopyOverCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameCopyPassCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameFightApprenticeshipCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameFightByGameCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameFightByRoomCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameFightMasterApprenticeshipCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameFihgt2v2Condition.cs" />
+    <Compile Include="Game.Server.Quests\GameKillByGameCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameKillByRoomCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameMissionOverCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameMonsterCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameOverByGameCondition.cs" />
+    <Compile Include="Game.Server.Quests\GameOverByRoomCondition.cs" />
+    <Compile Include="Game.Server.Quests\ItemComposeCondition.cs" />
+    <Compile Include="Game.Server.Quests\ItemFusionCondition.cs" />
+    <Compile Include="Game.Server.Quests\ItemInsertCondition.cs" />
+    <Compile Include="Game.Server.Quests\ItemMeltCondition.cs" />
+    <Compile Include="Game.Server.Quests\ItemMountingCondition.cs" />
+    <Compile Include="Game.Server.Quests\ItemStrengthenCondition.cs" />
+    <Compile Include="Game.Server.Quests\LoginMissionCondition.cs" />
+    <Compile Include="Game.Server.Quests\MarryCondition.cs" />
+    <Compile Include="Game.Server.Quests\MasterApprenticeshipCondition.cs" />
+    <Compile Include="Game.Server.Quests\NewGearCondition.cs" />
+    <Compile Include="Game.Server.Quests\OwnConsortiaCondition.cs" />
+    <Compile Include="Game.Server.Quests\OwnGradeCondition.cs" />
+    <Compile Include="Game.Server.Quests\OwnMarryCondition.cs" />
+    <Compile Include="Game.Server.Quests\OwnPropertyCondition.cs" />
+    <Compile Include="Game.Server.Quests\QuestInventory.cs" />
+    <Compile Include="Game.Server.Quests\SeedFoodPetCondition.cs" />
+    <Compile Include="Game.Server.Quests\SendGiftForFriendCondition.cs" />
+    <Compile Include="Game.Server.Quests\SetPasswordTwoCondition.cs" />
+    <Compile Include="Game.Server.Quests\SharePersonalStatusCondition.cs" />
+    <Compile Include="Game.Server.Quests\ShopCondition.cs" />
+    <Compile Include="Game.Server.Quests\TurnPropertyCondition.cs" />
+    <Compile Include="Game.Server.Quests\UpLevelPetCondition.cs" />
+    <Compile Include="Game.Server.Quests\UserSkillPetCondition.cs" />
+    <Compile Include="Game.Server.Quests\UserToemGemstoneCondition.cs" />
+    <Compile Include="Game.Server.Quests\UsingItemCondition.cs" />
+    <Compile Include="Game.Server.Rooms\BaseRoom.cs" />
+    <Compile Include="Game.Server.Rooms\BaseWaitingRoom.cs" />
+    <Compile Include="Game.Server.Rooms\BaseWorldBossRoom.cs" />
+    <Compile Include="Game.Server.Rooms\CancelPickupAction.cs" />
+    <Compile Include="Game.Server.Rooms\CreateRoomAction.cs" />
+    <Compile Include="Game.Server.Rooms\EnterRoomAction.cs" />
+    <Compile Include="Game.Server.Rooms\EnterWaitingRoomAction.cs" />
+    <Compile Include="Game.Server.Rooms\ExitRoomAction.cs" />
+    <Compile Include="Game.Server.Rooms\ExitWaitRoomAction.cs" />
+    <Compile Include="Game.Server.Rooms\IAction.cs" />
+    <Compile Include="Game.Server.Rooms\KickPlayerAction.cs" />
+    <Compile Include="Game.Server.Rooms\RoomMgr.cs" />
+    <Compile Include="Game.Server.Rooms\RoomSetupChangeAction.cs" />
+    <Compile Include="Game.Server.Rooms\StartGameAction.cs" />
+    <Compile Include="Game.Server.Rooms\StartGameMissionAction.cs" />
+    <Compile Include="Game.Server.Rooms\StartProxyGameAction.cs" />
+    <Compile Include="Game.Server.Rooms\StopProxyGameAction.cs" />
+    <Compile Include="Game.Server.Rooms\SwitchTeamAction.cs" />
+    <Compile Include="Game.Server.Rooms\UpdatePlayerStateAction.cs" />
+    <Compile Include="Game.Server.Rooms\UpdateRoomPosAction.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\ContinuationCommand.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\ForbidCommand.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\GunsaluteCommand.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\HymenealCommand.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\IMarryCommandHandler.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\InviteCommand.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\KickCommand.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\LargessCommand.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\MarryCommandAttbute.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\MarryCommandMgr.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\MoveCommand.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\Position.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms.TankHandle\UserFirecrackersCommand.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms\AbstractMarryProcessor.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms\eRoomState.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms\IMarryProcessor.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms\MarryCmdType.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms\MarryProcessorAttribute.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms\MarryRoom.cs" />
+    <Compile Include="Game.Server.SceneMarryRooms\TankMarryLogicProcessor.cs" />
+    <Compile Include="Game.Server.Statics\ItemAddType.cs" />
+    <Compile Include="Game.Server.Statics\ItemRemoveType.cs" />
+    <Compile Include="Game.Server.Statics\LogItemType.cs" />
+    <Compile Include="Game.Server.Statics\LogMgr.cs" />
+    <Compile Include="Game.Server.Statics\LogMoneyType.cs" />
+    <Compile Include="Game.Server.Statics\MoneyAddType.cs" />
+    <Compile Include="Game.Server.WebLogin\ChenckValidateRequest.cs" />
+    <Compile Include="Game.Server.WebLogin\ChenckValidateRequestBody.cs" />
+    <Compile Include="Game.Server.WebLogin\ChenckValidateResponse.cs" />
+    <Compile Include="Game.Server.WebLogin\ChenckValidateResponseBody.cs" />
+    <Compile Include="Game.Server.WebLogin\Get_UserSexRequest.cs" />
+    <Compile Include="Game.Server.WebLogin\Get_UserSexRequestBody.cs" />
+    <Compile Include="Game.Server.WebLogin\Get_UserSexResponse.cs" />
+    <Compile Include="Game.Server.WebLogin\Get_UserSexResponseBody.cs" />
+    <Compile Include="Game.Server.WebLogin\PassPortSoap.cs" />
+    <Compile Include="Game.Server.WebLogin\PassPortSoapChannel.cs" />
+    <Compile Include="Game.Server.WebLogin\PassPortSoapClient.cs" />
+    <Compile Include="Game.Server\GameClient.cs" />
+    <Compile Include="Game.Server\GameServer.cs" />
+    <Compile Include="Game.Server\GameServerConfig.cs" />
+    <Compile Include="Game.Server\LoginServerConnector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Game.Server\Config.logconfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bussiness\Bussiness.csproj">
+      <Project>{37F03F67-5D31-4BF0-89D2-7B5BFB4FC312}</Project>
+      <Name>Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game.Base\Game.Base.csproj">
+      <Project>{AEDE72EC-B7B8-4BB6-AD96-246A67D316E7}</Project>
+      <Name>Game.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Game.Logic\Game.Logic.csproj">
+      <Project>{6ACBBE7B-503F-4633-B505-E4256147BDC7}</Project>
+      <Name>Game.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlDataProvider\SqlDataProvider.csproj">
+      <Project>{46739905-387E-4175-90F2-F4F7ECC8E735}</Project>
+      <Name>SqlDataProvider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

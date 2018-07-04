@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{C31D4A39-FF10-4590-8C60-148ECCCD61A8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Center.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Game.Base">
+      <HintPath>..\Game.Base\bin\Debug\Game.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlDataProvider">
+      <HintPath>..\SqlDataProvider\bin\Debug\SqlDataProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="Bussiness">
+      <HintPath>..\Bussiness\bin\Debug\Bussiness.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Center.Server.Commands\GamePropertiesCommand.cs" />
+    <Compile Include="Center.Server.Managers\MacroDropMgr.cs" />
+    <Compile Include="Center.Server.Statics\LogMgr.cs" />
+    <Compile Include="Center.Server\CenterServer.cs" />
+    <Compile Include="Center.Server\CenterServerConfig.cs" />
+    <Compile Include="Center.Server\CenterService.cs" />
+    <Compile Include="Center.Server\ConsortiaMrg.cs" />
+    <Compile Include="Center.Server\eMailRespose.cs" />
+    <Compile Include="Center.Server\eMessageType.cs" />
+    <Compile Include="Center.Server\ePackageType.cs" />
+    <Compile Include="Center.Server\ePlayerState.cs" />
+    <Compile Include="Center.Server\ICenterService.cs" />
+    <Compile Include="Center.Server\LoginMgr.cs" />
+    <Compile Include="Center.Server\Player.cs" />
+    <Compile Include="Center.Server\ServerClient.cs" />
+    <Compile Include="Center.Server\ServerData.cs" />
+    <Compile Include="Center.Server\ServerMgr.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Center.Server\config.logconfig.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

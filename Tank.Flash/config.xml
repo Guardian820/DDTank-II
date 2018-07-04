@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <config>
+     <FLASHSITE value="http://127.0.0.1/r8/flash/"/>
+	<BACKUP_FLASHSITE value="http://127.0.0.1/r8/flash/"/>
+    <USE_MD5 value="true" />
+    <SITE value="http://fenix2.ddtankpirata.win/resource/" />
+    <FIRSTPAGE value="http://127.0.0.1/R8/" />
+    <REGISTER value="http://127.0.0.1/" />
+    <REQUEST_PATH value="http://127.0.0.1/requestii/" />
+    <LOGIN_PATH value="http://127.0.0.1/" siteName="Gunny II" />
+    <FILL_PATH value="http://127.0.0.1/" />
+    <POLICY_FILES>
+      <file value="http://127.0.0.1/crossdomain.xml" />
+    </POLICY_FILES>
+    <GAME_BOXPIC value="7" />
+    <FIGHTLIB value="true" />
+    <ALLOW_MULTI value="true" />
+    <TRAINER_PATH value="tutorial.swf" />
+    <MUSIC_LIST value="1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1034,1035,1036,1037,1038,1039,1040,1059,1060,1061,1062,1063,1065,1067,1068,1069,1077" />
+    <LANGUAGE value="portugal" />
+    <PARTER_ID value="303" />
+    <STATISTIC value="true" />
+    <SUCIDE_TIME value="120" />
+    <ISTOPDERIICT value="true" />
+    <COUNT_PATH value="http://gamebihandler.7road.com/ddt_game/List_BI_Click.ashx" />
+    <PHP isShow="true" link="true" site="http://me.zing.vn/{id}/home" infoPath="http://assist6.gn.zing.vn/GetUserImg.aspx?uid={uid}" />
+    <OFFICIAL_SITE value="http://gunny.zing.vn/" />
+    <GAME_FORUM value="http://diendan.zing.vn/gunny/" />
+    <COMMUNITY_FRIEND_PATH isUser="false" value="http://ddt.the9.com/addfriend.php" />
+    <COMMUNITY_INVITE_PATH value="http://ddt.the9.com/invite.php" />
+    <COMMUNITY_FRIEND_LIST_PATH value="http://assist6.gn.zing.vn/Other/GetSnsFriendList" snsPath="http://s19.ddt.kaixin001.com.cn/assist/SnsServer/NotifySnsUserUpgrade" isexist="true" isexistBtnVisble="true" cmBtnVisble="false" />
+    <COMMUNITY_INTERFACE enable="true" path="http://assist6.gn.zing.vn/Other/" shareBtnVisble="false" />
+    <COMMUNITY_FRIEND_INVITED_SWITCH value="true" invitedOnline="true" />
+    <EXTERNAL_INTERFACE path="http://fb.egame.hk/GameAccess/facebook/ddt/postAction.jsp" enable="false" />
+    <!--海外社区开关-->
+    <COMMUNITY_MICROBLOG value="true" />
+    <COMMUNITY_SINA_SECOND_MICROBLOG value="true" />
+    <ALLOW_POPUP_FAVORITE value="false" />
+    <FILL_JS_COMMAND value="user_ZingPay" enable="true" />
+    <SHIELD_NOTICE value="false" />
+    <!-- 客服系统开关 -->
+    <!--单机版新手引导的开关-->
+    <TRAINER_STANDALONE value="true" /><!--value="true"-->
+    <!--3.3之前的新版新手引导开关-->
+    <USER_GUILD_ENABLE value="true" /><!--value="true"-->
+    <!--远征码头等级限制-->
+    <MINLEVELDUPLICATE value="8" />
+    <!-- DISABLE_TASK_ID 为禁用的任务的ID，如有多个，请用逗号隔开 for example : 1002,1003,1004,新浪需要屏蔽的任务有378,379,380,381,604 -->
+    <DISABLE_TASK_ID value="545,382,383,384,385" />
+    <STATISTICS enable="true" />
+    <!--小游戏等级限制开关-->
+    <LITTLEGAMEMINLV value="20" />
+    <!-- 交友中心和结婚的开关-->
+    <SHOW_BACKGROUND value="true" />
+    <!--下载登录开关-->
+    <DOWNLOAD value="false" />
+    <!-- 开启温泉房间续费功能-->
+    <HOTSPRING value="true" /><!--value="true"-->
+    <!--- 幸运数字的开关-->
+    <LUCKY_NUMBER enable="false" />
+    <!--- 占卜的开关-->
+    <LOTTERY enable="false" />
+    <!-- 随机选频 -->
+    <RANDOM_CHANNEL value="true" /><!--value="true"-->
+    <!-- 同城好友开关 -->
+    <LIKEPERSON_SELECTED value="false" />
+    <!-- 游戏边框背景开关 -->
+    <MODULE>
+      <CIVIL enable="true" />
+      <CHURCH enable="true" />
+    </MODULE>
+    <CHAT_FACE>
+      <DISABLED_LIST list="38" />
+    </CHAT_FACE>
+    <GAME_FRAME_CONFIG>
+      <!-- 每帧执行的毫秒数,正常值应为40毫秒,并允许在35至45毫秒之间波动  (游戏内正常帧速为 25帧/秒)-->
+      <FRAME_TIME_OVER_TAG value="67" />
+      <!-- 连续低于上述毫秒的帧数 (游戏内正常帧速为 25帧/秒) -->
+      <FRAME_OVER_COUNT_TAG value="25" />
+    </GAME_FRAME_CONFIG>
+    <OVERSEAS>
+      <OVERSEAS_COMMUNITY_TYPE value="0" callPath="" callJS="" shareBtnVisble="true" />
+    </OVERSEAS>
+    <FEEDBACK enable="false" telNumber="" />
+    <CLIENT_DOWNLOAD value="http://download.game.zing.vn/gn/gunny_launcher.exe" />
+    <FEEDBACK enable="false" telNumber="" />
+    <SUIT enable="true" />
+    <DUNGEON_OPENLIST value="1,2,3,4,5,6,7,8,9,10,11,12" advancedEnable="true" />
+  </config>
+  <update>    
+    <version from="300" to="301">
+      <file value="*" />
+    </version>
+    <version from="326" to="327">
+      <file value="2.png" />
+      <file value="ui/portugal/language.txt" />
+      <file value="ui/portugal/swf/calendar.swf" />
+      <file value="ui/portugal/swf/core.swf" />
+      <file value="ui/portugal/swf/game.swf" />
+      <file value="ui/portugal/swf/roulette.swf" />
+      <file value="ui/portugal/xml/xml.png" />
+      <file value="flash/2.png" />
+      <file value="flash/ui/portugal/language.txt" />
+      <file value="flash/ui/portugal/swf/calendar.swf" />
+      <file value="flash/ui/portugal/swf/core.swf" />
+      <file value="flash/ui/portugal/swf/game.swf" />
+      <file value="flash/ui/portugal/swf/roulette.swf" />
+      <file value="flash/ui/portugal/xml/xml.png" />
+    </version>
+    <version from="327" to="328">
+      <file value="*" />
+    </version>
+    <version from="328" to="329">
+      <file value="2.png" />
+      <file value="flash/2.png" />
+    </version>
+    <version from="329" to="330">
+      <file value="2.png" />
+      <file value="flash/2.png" />
+    </version>
+    <version from="330" to="331">
+      <file value="flash/2.png" />
+      <file value="flash/3.png" />
+      <file value="flash/ui/portugal/language.txt" />
+      <file value="flash/ui/portugal/xml/xml.png" />
+      <file value="flash/ui/portugal/swf/corei.swf" />
+      <file value="flash/ui/portugal/swf/room.swf" />
+      <file value="2.png" />
+      <file value="3.png" />
+      <file value="ui/portugal/language.txt" />
+      <file value="ui/portugal/xml/xml.png" />
+      <file value="ui/portugal/swf/corei.swf" />
+      <file value="ui/portugal/swf/room.swf" />
+    </version>
+    <version from="331" to="332">
+      <file value="flash/ui/portugal/xml/xml.png" />
+      <file value="ui/portugal/xml/xml.png" />
+    </version>
+    <version from="332" to="333">
+      <file value="flash/2.png" />
+      <file value="flash/shape.swf" />
+      <file value="flash/ui/portugal/xml/xml.png" />
+      <file value="flash/ui/portugal/swf/corei.swf" />
+      <file value="flash/ui/portugal/swf/coreiconandtip.swf" />
+      <file value="2.png" />
+      <file value="shape.swf" />
+      <file value="ui/portugal/xml/xml.png" />
+      <file value="ui/portugal/swf/corei.swf" />
+      <file value="ui/portugal/swf/coreiconandtip.swf" />
+    </version>
+    <version from="333" to="334">
+      <file value="*" />
+    </version>
+    <version from="334" to="335">
+      <file value="partical.xml" />
+      <file value="shape.swf" />
+      <file value="flash/partical.xml" />
+      <file value="flash/shape.swf" />
+    </version>
+    <version from="335" to="336">
+      <file value="partical.xml" />
+      <file value="shape.swf" />
+      <file value="flash/partical.xml" />
+      <file value="flash/shape.swf" />
+    </version>
+    <version from="336" to="337">
+      <file value="*" />
+      <file value="flash/*" />
+    </version>
+    <version from="337" to="338">
+      <file value="flash/partical.xml" />
+      <file value="flash/2.png" />
+      <file value="flash/shape.swf" />
+      <file value="partical.xml" />
+      <file value="2.png" />
+      <file value="shape.swf" />
+    </version>
+    <version from="338" to="339">
+      <file value="flash/*" />
+      <file value="*" />
+    </version>
+    <version from="339" to="340">
+      <file value="flash/*" />
+      <file value="*" />
+    </version>
+    <version from="340" to="341">
+      <file value="flash/*" />
+      <file value="*" />
+    </version>
+    <version from="341" to="342">
+      <file value="flash/*" />
+      <file value="*" />
+    </version>
+    <version from="342" to="343">
+      <file value="flash/2.png" />
+      <file value="2.png" />
+    </version>
+    <version from="343" to="344">
+      <file value="flash/2.png" />
+      <file value="flash/ui/portugal/language.png" />
+      <file value="flash/ui/portugal/xml/xml.png" />
+      <file value="flash/ui/portugal/swf/ddtbagandinfo.swf" />
+      <file value="flash/ui/portugal/swf/login.swf" />
+      <file value="2.png" />
+      <file value="ui/portugal/language.png" />
+      <file value="ui/portugal/xml/xml.png" />
+      <file value="ui/portugal/swf/ddtbagandinfo.swf" />
+      <file value="ui/portugal/swf/login.swf" />
+    </version>
+    <version from="344" to="345">
+      <file value="flash/2.png" />
+      <file value="flash/ui/portugal/language.png" />
+      <file value="2.png" />
+      <file value="ui/portugal/language.png" />
+    </version>
+    <version from="345" to="346">
+      <file value="flash/1.png" />
+      <file value="flash/2.png" />
+      <file value="flash/3.png" />
+      <file value="flash/ui/portugal/language.png" />
+      <file value="flash/ui/portugal/xml/xml.png" />
+      <file value="flash/DDT_Loading.swf" />
+      <file value="flash/Loading.swf" />
+      <file value="flash/ui/portugal/swf/chat.swf" />
+      <file value="flash/ui/portugal/swf/ddtawardsystem.swf" />
+      <file value="flash/ui/portugal/swf/ddthall.swf" />
+      <file value="flash/ui/portugal/swf/firstcore.swf" />
+      <file value="flash/ui/portugal/swf/roadcomponent.swf" />
+      <file value="1.png" />
+      <file value="2.png" />
+      <file value="3.png" />
+      <file value="ui/portugal/language.png" />
+      <file value="ui/portugal/xml/xml.png" />
+      <file value="DDT_Loading.swf" />
+      <file value="Loading.swf" />
+      <file value="ui/portugal/swf/chat.swf" />
+      <file value="ui/portugal/swf/ddtawardsystem.swf" />
+      <file value="ui/portugal/swf/ddthall.swf" />
+      <file value="ui/portugal/swf/firstcore.swf" />
+      <file value="ui/portugal/swf/roadcomponent.swf" />
+    </version>
+    <version from="346" to="347">
+      <file value="flash/2.png" />
+      <file value="flash/ui/portugal/language.png" />
+      <file value="flash/ui/portugal/xml/xml.png" />
+      <file value="flash/ui/portugal/swf/chat.swf" />
+      <file value="flash/ui/portugal/swf/ddtawardsystem.swf" />
+      <file value="flash/ui/portugal/swf/ddthall.swf" />
+      <file value="flash/ui/portugal/swf/firstcore.swf" />
+      <file value="2.png" />
+      <file value="ui/portugal/language.png" />
+      <file value="ui/portugal/xml/xml.png" />
+      <file value="ui/portugal/swf/chat.swf" />
+      <file value="ui/portugal/swf/ddtawardsystem.swf" />
+      <file value="ui/portugal/swf/ddthall.swf" />
+      <file value="ui/portugal/swf/firstcore.swf" />
+    </version>
+    <version from="347" to="348">
+      <file value="flash/2.png" />
+      <file value="flash/ui/portugal/language.png" />
+      <file value="flash/ui/portugal/xml/xml.png" />
+      <file value="flash/ui/portugal/swf/farm.swf" />
+      <file value="flash/ui/portugal/swf/firsttainer.swf" />
+      <file value="2.png" />
+      <file value="ui/portugal/language.png" />
+      <file value="ui/portugal/xml/xml.png" />
+      <file value="ui/portugal/swf/farm.swf" />
+      <file value="ui/portugal/swf/firsttainer.swf" />
+    </version>
+    <version from="348" to="349">
+      <file value="flash/Flash/partical.xml" />
+      <file value="flash/Flash/2.png" />
+      <file value="flash/Flash/ui/portugal/language.png" />
+      <file value="flash/Flash/ui/portugal/xml/xml.png" />
+      <file value="flash/Flash/shape.swf" />
+      <file value="flash/Flash/ui/portugal/swf/farm.swf" />
+      <file value="flash/Flash/ui/portugal/swf/firsttainer.swf" />
+      <file value="Flash/partical.xml" />
+      <file value="Flash/2.png" />
+      <file value="Flash/ui/portugal/language.png" />
+      <file value="Flash/ui/portugal/xml/xml.png" />
+      <file value="Flash/shape.swf" />
+      <file value="Flash/ui/portugal/swf/farm.swf" />
+      <file value="Flash/ui/portugal/swf/firsttainer.swf" />
+    </version>
+    <version from="349" to="350">
+      <file value="flash/Flash/2.png" />
+      <file value="Flash/2.png" />
+    </version>
+    <version from="350" to="351">
+      <file value="flash/2.png" />
+      <file value="flash/ui/portugal/xml/xml.png" />
+      <file value="2.png" />
+      <file value="ui/portugal/xml/xml.png" />
+    </version>
+    <version from="351" to="352">
+      <file value="*" />
+      <file value="flash/*" />
+    </version>
+    <version from="352" to="353">
+      <file value="flash/Flash/2.png" />
+      <file value="flash/Flash/ui/portugal/language.png" />
+      <file value="Flash/2.png" />
+      <file value="Flash/ui/portugal/language.png" />
+    </version>
+    <version from="353" to="354">
+      <file value="flash/Flash/2.png" />
+      <file value="Flash/2.png" />
+    </version>
+    <version from="354" to="355">
+      <file value="flash/Flash/partical.xml" />
+      <file value="flash/Flash/2.png" />
+      <file value="flash/Flash/ui/portugal/xml/xml.png" />
+      <file value="flash/Flash/shape.swf" />
+      <file value="Flash/partical.xml" />
+      <file value="Flash/2.png" />
+      <file value="Flash/ui/portugal/xml/xml.png" />
+      <file value="Flash/shape.swf" />
+    </version>
+    <version from="355" to="356">
+      <file value="flash/Flash/partical.xml" />
+      <file value="flash/Flash/2.png" />
+      <file value="flash/Flash/ui/portugal/xml/xml.png" />
+      <file value="flash/Flash/shape.swf" />
+      <file value="Flash/partical.xml" />
+      <file value="Flash/2.png" />
+      <file value="Flash/ui/portugal/xml/xml.png" />
+      <file value="Flash/shape.swf" />
+    </version>
+    <version from="356" to="357">
+      <file value="flash/2.png" />
+      <file value="flash/ui/portugal/language.png" />
+      <file value="flash/ui/portugal/xml/xml.png" />
+      <file value="flash/ui/portugal/swf/ddtawardsystem.swf" />
+      <file value="flash/ui/portugal/swf/ddtcorei.swf" />
+      <file value="flash/ui/portugal/swf/firstcore.swf" />
+      <file value="2.png" />
+      <file value="ui/portugal/language.png" />
+      <file value="ui/portugal/xml/xml.png" />
+      <file value="ui/portugal/swf/ddtawardsystem.swf" />
+      <file value="ui/portugal/swf/ddtcorei.swf" />
+      <file value="ui/portugal/swf/firstcore.swf" />
+    </version>
+    <version from="357" to="358">
+      <file value="flash/2.png" />
+      <file value="flash/ui/portugal/xml/xml.png" />
+      <file value="2.png" />
+      <file value="ui/portugal/xml/xml.png" />
+    </version>
+    <version from="358" to="359">
+      <file value="flash/ui/portugal/swf/ddtcalendar.swf" />
+      <file value="ui/portugal/swf/ddtcalendar.swf" />
+    </version>
+    <version from="359" to="360">
+      <file value="*" />
+      <file value="flash/*" />
+    </version>
+  </update>
+</root>

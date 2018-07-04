@@ -1,0 +1,495 @@
+@charset "utf-8";
+
+/**公共外框**/
+.dialog-overlay { opacity:0.5; filter:alpha(opacity:50); background:gray; }
+.dialog { background:rgba(82, 82, 82, 0.7) !important; background:rgb(82, 82, 82); padding:10px; border-radius:3px; -moz-border-radius:3px;-webkit-border-radius:3px; _width:expression('200px');}
+.dialog .dialog_title { cursor:move; background-color:#6D84B4; color:#fff;height:30px; border:1px solid #3B5998; border-bottom:0; padding:0 5px 0 10px; display:block;}
+.dialog .dialog_title h3 { float:left; height:30px; font:bold 14px/30px Tahoma;  }
+.dialog .dialog_title .dialog_close { float:right; text-transform:uppercase; color:#fff; cursor:pointer; line-height:30px; }
+.dialog .dialog_title .dialog_close:hover { text-decoration:none;}
+.dialog .dialog_content { background:#fff; padding:0; border:#555 1px solid; border-top:none; border-bottom:none; min-width:430px; }
+.dialog .dialog_content .loading { min-height:200px; background:url(../img/loading.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/loading.gif?2011121501*/ center no-repeat;}
+.dialog .dialog_content iframe { height:100%; width:100%; }
+.dialog .dialog_content img { overflow:auto; max-width:700px; max-height:500px; _width:expression((document.body.clientWidth > 700) ? '700px' : 'auto'); _height:expression((document.body.clientHeight > 500) ? '500px' : 'auto');}
+.dialog .dialog_button { padding:10px 5px 10px 10px; background-color:#F2F2F2;  text-align:right; border:#555 1px solid; border-top:1px solid #ccc;  }
+.dialog .dialog_button a, .dialog .dialog_button b{display:inline-block; vertical-align:middle; color:#333; cursor:pointer; }
+.dialog .dialog_button a { margin:0 0 0 15px; padding:0; border-width:1px; border-style:solid; noFocusLine:expression(this.onfocus=this.blur()); outline:none; -moz-outline-style:none; -webkit-outline-style:none; }
+.dialog .dialog_button a:hover { text-decoration:none; }
+.dialog .dialog_button a b { padding:0px 15px;  border-color:#fff; border-style: solid; border-width: 1px 0 0 1px; font-size:14px; line-height:24px; }
+.dialog .dialog_button a.blue { background-color:#5872a7; border-color:#29447E #29447E #1A356E; }
+.dialog .dialog_button a.blue b { background:url(../img/fbIco01.png-2012011302.png)/*tpa=http://337.eleximg.com/337/v3static/img/fbIco01.png?2012011302*/ no-repeat 0 -693px; color:#fff; }
+.dialog .dialog_button a.gray { background-color:#F2F2F2; border-color:#999999 #999999 #888888; }
+.dialog .dialog_button a.gray b { background:url(../img/fbIco01.png-2012011302.png)/*tpa=http://337.eleximg.com/337/v3static/img/fbIco01.png?2012011302*/ no-repeat 0 -643px; color:#333; }
+.dialog .dialog_clear { clear:both; }
+.dialog h1{ font-size:1.4em}
+.dialog h2{ font-size:1.4em}
+.dialog h3{ font-size:1.3em;}
+.dialog h4{ font-size:1.2em;}
+.dialog h5{ font-size:1.1em;}
+.dialog h6{ font-size:1.0em;}
+.ajaxLoading { width:15px; height:15px; vertical-align:middle; display:inline-block; margin:0 0 0 15px; }
+.ajaxLoading img { width:15px; height:15px;}
+.elexLoadingfb { height:32px; background:url(../img/loading.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/loading.gif?2011121501*/ center no-repeat;}
+.elexLoadingimg { background:url(../img/imgloadimg.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/imgloadimg.gif?2011121501*/ center no-repeat;}
+
+
+/**主体并带关闭和其他操作按钮**/
+.dialogPop { width:470px; padding:0;}
+.dialogPop .inTitle { padding:5px 10px; line-height:15px; background-color:#f2f2f2; border-bottom:1px solid #ccc;}
+.dialogPop .inContent { padding:10px 20px;}
+.dialogPop .setlangul { width:100%; display:inline-block;}
+.dialogPop .setlangul li { width:30%; padding:0 3% 0 0; float:left; line-height:21px; font-size:12px;}
+.dialogPop .setlangul li span { font-weight:bold;}
+.dialogPop .inBtn { padding:5px 10px; line-height:22px; background-color:#f2f2f2; border-top:1px solid #ccc; text-align:right;}
+.dialogPop .inBtn a { margin:0 0 0 10px;}
+.dialogPop .inBtn a b { line-height:22px; padding:0 15px; font-size:13px;}
+
+/**提示弹出框主体**/
+.elexPopup { position:absolute; z-index:9999; padding:6px 0; }
+.elexPopup .loading { height:60px; width:100%; background:url(../img/loading.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/loading.gif?2011121501*/ center no-repeat;}
+.elexPopup .elexPopupWrap {width:300px; border:1px solid #333; border-bottom:2px solid #283e6a; background-color:#fff;} 
+.elexPopup .popopIco { width:13px; height:8px; background-image:url(../img/fbIco01.png-2012011302.png)/*tpa=http://337.eleximg.com/337/v3static/img/fbIco01.png?2012011302*/; position:absolute;}
+.elexPopup .popopIco.topL { left:20px; background-position:-159px -307px; top:0;}
+.elexPopup .popopIco2 { width:13px; height:8px; background-image:url(../img/fbIco01.png-2012011302.png)/*tpa=http://337.eleximg.com/337/v3static/img/fbIco01.png?2012011302*/; position:absolute;}
+.elexPopup .popopIco2.downL { left:20px; background-position:-159px -315px;margin-top: -1px;}
+.elexPopup .popopCont { width:100%;}
+
+/**分享游戏连接**/
+.dialogCopyGameLink { padding:15px; width:500px; }
+.dialogCopyGameLink table { width:100%;}
+.dialogCopyGameLink td { padding:5px; vertical-align:top;}
+.dialogCopyGameLink td.inImg { width:172px; height:104px; } 
+.dialogCopyGameLink td.inImg img { width:172px; height:104px; }
+.dialogCopyGameLink td.inTexteara { width:300px;}
+.dialogCopyGameLink td.inTexteara textarea { width:300px; border:1px solid #ccc; overflow:hidden; height:104px; color:#999;}
+
+/**显示游戏列表**/
+.dialogServer { width:550px; height:347px; overflow-y:auto; overflow-x:hidden;}
+.dialogServer .inList { width:100%;}
+.dialogServer .inList p { padding:8px 13px; background-color:#f2f2f2; font-weight:bold;}
+.dialogServer .inList ul { padding:10px 4.5%; display:inline-block; width:91%}
+.dialogServer .inList li { float:left; width:47%; height:22px; line-height:22px; background:url(../img/list.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/list.gif?2011121501*/ left center no-repeat; padding:0 0 0 2.5%}
+.dialogServer .inList.inAll li a { color:#808080}
+
+
+/**名片显示模式**/
+.dialogCard { width:100%; height:153px;}
+.dialogCard .inCardCont { padding:10px; height:100px; overflow:hidden;}
+.dialogCard .inImg { width:100px; height:100px; float:left; }
+.dialogCard .inText { margin:0 0 0 110px; height:107px;}
+.dialogCard .inName { height:20px; overflow:hidden; line-height:20px;}
+.dialogCard .inDec { max-height:45px;overflow:hidden; line-height:15px; color:#808080; margin:0 0 5px;}
+.dialogCard .inTips {height:45px;overflow: hidden;}
+.dialogCard .inCardBtn {  height:20px; padding:5px 5px 7px; background-color:#f2f2f2; border-top:1px solid #ccc; text-align:right;}
+.dialogCard .inCardBtn b i { margin-top:-2px;}
+.dialogCard .inCardBtn b { line-height:19px;}
+.dialogCard .inCardBtn a { margin:0 0 0 5px;}
+.cardMenuCont { padding:9px 0 0; min-width:180px;}
+.cardMenuContWrap { border:1px solid #333; background-color:#fff; padding:10px 0;}
+.cardMenuCont .topL {width:13px; height:8px; background-image:url(../img/fbIco01.png-2012011302.png)/*tpa=http://337.eleximg.com/337/v3static/img/fbIco01.png?2012011302*/; position:absolute; top:3px; margin-left:5px; background-position:-159px -307px;}
+.cardMenuCont .inList { padding:0; border-width:1px 0; border-style:solid; border-color:#fff; width:100%; text-align:left}
+.cardMenuCont .inList a { display:inline-block; width:80%; padding:0 10%; border-width:1px 0; border-style:solid; border-color:#fff; line-height:1.7em; color:#333; font-weight:normal; white-space:nowrap; outline:none; -moz-outline-style:none;-webkit-outline-style:none}
+.cardMenuCont .inList a.inABtn i { margin:0 5px 0 0;}
+.cardMenuCont .inList a.inABtn:hover { text-decoration:none; border-color:#29447E #29447E #1A356E;} 
+.cardMenuCont .inList a.inABtn:hover i.icoEdit { background-position:-172px -40px;}
+.cardMenuCont .inList a.inABtn:hover i.icoYesB { background-position:-2px -444px; }
+.cardMenuCont .inList a.inABtn:hover i.icoGreatB { background-position:-68px -301px;}
+.cardMenuCont .inList a.inABtn:hover i.icoMsgB { background-position:-67px -316px; }
+.cardMenuCont .inList a.inABtn:hover i.icoAddoneB { background-position:-92px -303px;}
+.cardMenuCont .inList a.inABtn:hover i.icoAddivideo { background-position:-124px -368px;}
+.cardMenuCont .inList a.inABtn:hover i.icoInstalB { background-position:-139px -302px;}
+.cardMenuCont .inList a.inABtn:hover i..icoDelW { background-position:-178px -351px;}
+.cardMenuCont .inList a b { font-weight:normal;}
+.cardMenuCont .inList a b i { margin:0 10px 0 0;}
+.cardMenuCont .inList a:hover { background-color:#6D84B4!important; border-color:#3B5998; color:#fff; text-decoration:none;}
+.cardMenuCont .inLine { height:1px; margin:5px 5%; background-color:#ddd; overflow:hidden}
+
+/**提示类**/
+.elexDialog { width:470px;}
+.elexDialog .inTitle { padding:10px 10px 0; line-height:20px;}
+.elexDialog table { width:100%;}
+.elexDialog table td { padding:4px 0;}
+.elexDialog .inCont { padding:10px 10px 20px;}
+.elexDialog .inCont b { padding:0 5px 0 0;}
+.elexDialog .inCont select { width:150px; height:20px;}
+.elexDialog .inCont input.inText { height:20px; width:250px; font-size:12px;}
+.elexDialog .inCont p { padding:0 0 10px;}
+.elexDialog .elexDialogBtn { padding:10px 5px 10px 10px; background-color:#F2F2F2; border-top:1px solid #ccc; text-align:right;}
+.elexDialog .elexDialogBtn label { margin:0 5px;}
+.elexDialog .elexDialogBtn label.fbBtnBlue { height:auto!important;}
+.elexDialog .elexDialogBtn label.fbBtnBlue input { height:21px; font-size:13px; }
+.elexDialog .elexDialogBtn label.fbBtnGray input { height:22px; font-size:13px;}
+.elexDialog .inCont .inTips { padding:0; border-top:1px solid #ccc; margin:10px 0 0; line-height:25px; color:#555;}
+.elexDialogTips { width:350px; height:30px; padding:20px 15px 30px; line-height:30px; color:#555;}
+.elexDialogTips b { color:#c00;}
+.elexDialogTipsNew { width:380px; height:100px; color:#808080; display:table-cell; vertical-align:middle; padding:0 20px;}
+.elexDialogTipsNew p { background:#FFEBE8 url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 10px -26px; padding:5px 5px 5px 30px; line-height:18px; min-width:1px; border:1px solid #DD3C10;}
+.elexDialogTipsok { width:380px; height:100px; color:#333; display:table-cell; vertical-align:middle; padding:0 20px;}
+.elexDialogTipsok p { background:#f1f7ec url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 10px 10px; padding:5px 5px 5px 30px; line-height:18px; min-width:1px; border:1px solid #b5d597;}
+
+/**用户通用弹框**/
+.elexPopUserWrap { width:470px;}
+.elexPopUserWrap .inTitle { padding:6px 7px 6px 5px; border-bottom:1px solid #ccc; background-color:#F2F2F2;}
+.elexPopUserWrap .inTitle select { height:22px;}
+.elexPopUserWrap .inContent {min-height:100px; max-height:450px ;overflow-x:hidden; overflow-y:auto; padding:0;}
+.elexPopUserWrap .elexDialogBtn { padding:10px 5px 10px 10px; background-color:#F2F2F2; border-top:1px solid #ccc; text-align:right;}
+.elexPopUserWrap .elexDialogBtn a { margin:0 0 0 15px;}
+.elexPopUserWrap .elexDialogBtn a b { line-height:22px; padding:0 15px; font-size:13px;}
+.elexPopUserWrap .selectCont { margin:30px 20px;}
+.elexPopUserWrap .selectCont textarea { width:100%; height:50px;}
+
+/**举报弹框**/
+.elexReportWrap { width:470px;}
+.elexReportWrap .inTitle { padding:6px 7px 6px 5px; border-bottom:1px solid #ccc; background-color:#F2F2F2;}
+.elexReportWrap .inTitle select { height:22px;}
+.elexReportWrap td {padding: 5px 5px;vertical-align: top;}
+.elexReportWrap td.tdLeft {color: #333333;text-align: right;width: 100px;}
+.elexReportWrap td.tdLeft span{font-weight: bold; font-size:14px;}
+.elexReportWrap td.tdRight {color: #000000;width: 310px;}
+.elexReportWrap td.tdRight input{height: 18px;width: 251px;border-color: #7C7C7C #C3C3C3 #DDDDDD;border-style: solid;border-width: 1px;font-family: "Lucida Grande",Tahoma; font-size: 12px;margin: 0;padding: 1px 2px;}
+.elexReportWrap td.tdRight span{ font-family: "Lucida Grande",Tahoma;font-size: 12px;margin: 0;padding: 1px 2px;}
+.elexReportWrap td #captcha {height: 30px;margin: 10px 10px 0 0;vertical-align: middle;width: 104px;}
+.elexReportWrap td #refresh {height: 25px;margin: 10px 0 0;vertical-align: middle;}
+.elexReportWrap .elexDialogBtn { padding:10px 5px 10px 10px; background-color:#F2F2F2; border-top:1px solid #ccc; text-align:right;}
+.elexReportWrap .elexDialogBtn a { margin:0 0 0 15px;}
+.elexReportWrap .elexDialogBtn a b { line-height:22px; padding:0 15px; font-size:13px;}
+.elexReportWrap .reportTips .red {background: url("../img/ajaxtips.png-2011121501.png")/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat scroll 0 -27px transparent;height: 25px;line-height: 25px;min-width: 1px;padding: 0 0 0 20px;}
+
+/**时间插件**/
+.gldp-default { float:left; font-family:"trebuchet ms" !important; background-color:#ccc !important; font-size:13px !important; border:solid 1px #888; }
+.gldp-default table { border-spacing:1px; border-collapse:inherit; }
+.gldp-default tr { line-height:18px; }
+.gldp-default td { margin:0; padding:4px!important; width:20px; text-align:center; }
+.gldp-default-prevnext { font-family:"times new roman"; color:#222; cursor:pointer; font-weight:bold; }
+.gldp-default-monyear { color:#222; font-size:13px!important; font-weight:bold; }
+.gldp-default-dow { background-color:#900; color:#eee; font-size:13px !important; font-weight:bold; }
+.gldp-default-dow td { color:#eee!important;}
+.gldp-default-day { background-color:#fff; color:#222; border:solid 1px #fff; font-weight:bold; }
+.gldp-default-day-hover{ background-color:#fff; color:#600; border:solid 1px #900; cursor:pointer; font-weight:bold;}
+.gldp-default-selected { background-color:#fee; color:#222; border:solid 1px #900; }
+.gldp-default-today { background-color:#900; color:#fff!important; font-weight:bold; }
+.gldp-default-today-hover { background-color:#fff; color:#333; border:solid 1px #900; cursor:pointer; font-weight:bold; }
+.gldp-default-sat, .gldp-default-sun { background-color:#fff; color:#004f8f; border:solid 1px #fff; font-weight:bold;}
+.gldp-default-sat-hover, .gldp-default-sun-hover{ background-color:#fff; color:#004f8f; border:solid 1px #f82200; cursor:pointer; font-weight:bold;}
+.gldp-default-noday { background-color:#fff; border:solid 1px #fff; text-indent:-9999px}
+
+/**列表类**/
+.userListWrap { width:100%;}
+.userListWrap .inList { border-bottom:1px solid #eee; height:50px; padding:4px 3px; } 
+.userListWrap .inList .inImg { width:50px; height:50px; padding:0 10px 0 0; float:left;}
+.userListWrap .inList .inImg img { width:50px; height:50px;}
+.userListWrap .inList .inBtn { float:right; height:20px; margin:15px 0 0; padding:0 5px; }
+.userListWrap .inList .inBtn b { line-height:20px;}
+.userListWrap .inList .inText { margin:0 0 0 65px; height:50px; width:230px; vertical-align:middle; display:table-cell; font-weight:bold; font-size:13px; }
+.userListWrap .viewMore { padding:15px 10px;}
+.userListWrap .viewMore a { height:20px; line-height:20px; display:inline-block; padding:5px 0; text-align:center; width:100%; background-color:#EDEFF4; border:1px solid #D8DFEA;}
+.userListWrap .viewMore a:hover { background-color:#d8dfea;}
+
+/**上传组件**/
+.elexUploadNew { min-height:100px; height:auto!important;}
+.elexUploadNew .elexInputWrap { padding:10px;}
+.elexUploadNew form { padding:0 0 10px; border-bottom:1px solid #eee;} 
+.elexUploadNew form input { height:20px; margin:10px 0;}
+.elexUploadNew .inTips { padding:0 0 15px;}
+.elexUploadNew .inDse { padding:10px 0 10px; color:#808080;}
+.elexUploadNew .inDse a { padding:0 0 0 5px;}
+.elexUploadNew .options { padding:10px; background-color:#fafafa;}
+.elexUploadNew .options h6 { padding:3px 0;}
+.elexUploadNew .options input { width:400px; height:20px;}
+.elexUploadNew .options textarea { width:400px; height:60px; overflow-x:hidden; overflow-y:auto}
+.elexUploadNew .advanced { height:20px; padding:10px; cursor:pointer; float:left;}
+.elexUploadNew .advanced i { margin:-3px 5px 0 0;}
+
+/**创建内容类**/
+.elexCreateNew { min-height:100px; height:auto!important;}
+.elexCreateNew .elexInputWrap { padding:10px;}
+.elexCreateNew .inList { width:100%; padding:0 0 10px;}
+.elexCreateNew .inList h6 { padding:0 0 5px;}
+.elexCreateNew .inList p input.elexInput { width:95%; height:20px;}
+.elexCreateNew .inList p select { height:20px; width:40%;}
+.elexCreateNew .elexTips { padding:5px; margin:0 0 10px; border:1px solid #900; color:#900; width:95%;}
+.elexCreateNew .options { padding:0 0 10px; }
+.elexCreateNew .options h6 { padding:10px 0 3px;}
+.elexCreateNew .options input { vertical-align:middle;}
+.elexCreateNew .options input.elexInput { width:95%; height:20px;}
+.elexCreateNew .options textarea { width:400px; height:60px; overflow-x:hidden; overflow-y:auto}
+.elexCreateNew .advanced { height:20px; padding:10px 0 0; cursor:pointer; float:left;}
+.elexCreateNew .advanced i { margin:-3px 5px 0 0;}
+
+/**搜索**/
+#searchAjax { width:346px; position:fixed; border:1px solid #333; border-bottom:2px solid #283e6a; background-color:#fff;}
+#searchAjax .inTitle { height:22px; border-top:1px solid #e2e2e2; background-color:#f2f2f2; margin:3px 0 0;}
+#searchAjax .inTitle.mar0 { margin:0;}
+#searchAjax .inTitle a { display:block; padding:0 5px; height:22px; color:#333; line-height:22px;}
+#searchAjax .inTitle a:hover { text-decoration:none;}
+#searchAjax .inCont { width:100%;}
+#searchAjax .inCont .inList { padding:3px 6px; border:1px solid #fff; border-left:0px; border-right:0; cursor:pointer;}
+#searchAjax .inCont .inList .inImg { width:50px; height:50px; overflow:hidden; float:left;}
+#searchAjax .inCont .inList .inImg img { width:50px; height:50px;}
+#searchAjax .inCont .inList .inText { margin:0 0 0 56px;}
+#searchAjax .inCont .inList .inText div { font-weight:bold;}
+#searchAjax .inCont .inList .inText p { color:#808080; overflow:hidden; height:1.5em}
+#searchAjax .inCont .inList .inText p.inOther { font-size:11px; overflow:hidden; height:1.5em}
+#searchAjax .inCont .inList.inActive { background-color:#6d84b4; border:1px solid #3b5998; border-left:0px; border-right:0;}
+#searchAjax .inCont .inList.inActive .inText div a { color:#fff;}
+#searchAjax .inCont .inList.inActive .inText div a:hover { text-decoration:none;} 
+#searchAjax .inCont .inList.inActive .inText p { color:#fff;}
+#searchAjax .inCont .inList.inBottom { margin:3px 0 0; text-align:center; border:0; border-top:1px solid #e2e2e2; padding:10px 5px; background-color:#f2f2f2;}
+#searchAjax .inCont .inList.inBottom a { font-weight:bold;}
+#searchAjax .inCont .inList.inBottom.inActive { background-color:#6d84b4; border:1px solid #3b5998; color:#fff;}
+#searchAjax .inCont .inList.inBottom.inActive a { color:#fff;}
+
+/**分享到群组**/
+.shareToGroup { min-height:100px; height:auto!important;}
+.shareToGroup .elexInputWrap { padding:0;}
+.shareToGroup .selectgroup { margin:0 0 15px;}
+.shareToGroup .selectgroup .inTitle h6 { font-weight:bold; float:left; height:20px; line-height:20px;}
+.shareToGroup .selectgroup .inTitle p { height:20px; line-height:20px; float:right;}
+.shareToGroup .selectgroup .inTitle p input { vertical-align:middle;}
+.shareToGroup .selectgroup ul { padding:10px 3%; display:inline-block; width:94%;}
+.shareToGroup .selectgroup ul li { width:49%; height:20px; float:left;}
+.shareToGroup .selectgroup ul li a { margin:0 0 0 5px;}
+.shareToGroup .selectgroup ul li input { vertical-align:middle;}
+.shareToGroup .shareCont { margin:10px 3%; width:89%; border:1px solid #eee; border-top:1px solid #ccc; border-right:1px solid #ccc; padding:10px 2.1%; background-color:#fafafa;}
+.shareToGroup .shareCont .inImg { width:93px; height:74px; float:left; padding:2px; margin:3px 0 0; border:1px solid #ccc; background-color:#fff;}
+.shareToGroup .shareCont .inImg img { width:93px; height:74px;}
+.shareToGroup .shareCont .inText { margin:0 0 0 110px;}
+.shareToGroup .shareCont .inText h6 { padding:0 0 5px;}
+.shareToGroup .shareCont .inText p { max-height:80px; overflow:hidden; line-height:16px;}
+.shareToGroup .elexTips { margin:10px 3%; padding:10px 2.1%; width:89%; border:1px solid #900; color:#900; }
+
+/**登陆注册弹出样式**/
+.dialogLoginCom { width:412px; padding:10px 10px 15px; position:relative;}
+.dialogLoginCom .inTitle { margin:0 0 20px;}
+.dialogLoginCom .inTitle p { font-size:16px; font-weight:bold;}
+.dialogLoginCom .inLoginCont { margin:0 0 15px; }
+.dialogLoginCom .inList { margin:0 0 10px;}
+.dialogLoginCom .inList h6 { padding:0 0 5px;}
+.dialogLoginCom .inList h6 a { font-weight:normal;}
+.dialogLoginCom .inList .BtnBlue b { line-height:20px; padding:0 15px;}
+.dialogLoginCom .inList p input { vertical-align:middle;}
+.dialogLoginCom .inList p input.elexInput { width:406px; height:20px;}
+.dialogLoginCom .inList p input.bg { background-color:#eee; border:1px solid #bbb; border-top-color:#333; border-left-color:#333;}
+.dialogLoginCom div.elexTipsLogin { padding:5px; margin:0 0 10px; border:1px solid #900; color:#900; width:400px;}
+.dialogLoginCom .dialogLoginTab { line-height:20px;}
+.dialogLoginCom .inContent { background-color:#eee; padding:15px;}
+.dialogLoginCom table { width:100%; }
+.dialogLoginCom td { padding:10px 5px; vertical-align:top;}
+.dialogLoginCom td.tdLeft { text-align:right; width:180px; color:#333; }
+.dialogLoginCom td.tdLeft .tdTitle { font-weight:bold;}
+.dialogLoginCom td.tdLeft .tabTips { color:#999; font-style:italic;}
+.dialogLoginCom td.tdMiddle { color:#000; width:310px;}
+.dialogLoginCom td.tdMiddle a.BtnBlue b {padding:4px 30px;}
+.dialogLoginCom td.tdMiddle .inText { width:300px; height:20px;}
+.dialogLoginCom td .get_more { padding:5px 0 10px; border-top:1px dashed #ccc; margin:10px 0 0;}
+.diaReg { width:750px;}
+.diaReg .inTitle { margin:0 0 10px;}
+.diaReg div.elexTips.red { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 0 -27px; padding:0 0 0 20px; line-height:25px; height:25px; min-width:1px;}
+.diaReg div.elexTips.green { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 0 7px; padding:0 0 0 20px; line-height:25px; height:25px; min-width:1px;}
+.diaReg td.elexTips .red { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 0 -33px; padding:0 0 0 20px; line-height:15px; min-width:1px;} 
+.diaReg td.elexTips .green { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 0 4px; padding:0 0 0 20px; line-height:15px; height:25px; min-width:1px;}
+
+/**重构注册弹出样式**/
+.diaWidth{
+	width:550px;
+}
+.dialogLoginCom .inContent .input-group p{
+	height: 55px;
+	margin-top: 5px;
+}
+.dialogLoginCom .inContent .input-group input{
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear .2s, box-shadow linear .2s;
+	-moz-transition: border linear .2s, box-shadow linear .2s;
+	-o-transition: border linear .2s, box-shadow linear .2s;
+	transition: border linear .2s, box-shadow linear .2s;
+}
+.dialogLoginCom .inContent .input-group input:focus{
+	border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	outline: thin dotted \9;
+	-webkit-box-shadow: inset 0 10px 10px rgba(0,0,0,.075), 0 0 18px rgba(82,168,236,.6);
+	-moz-box-shadow: inset 0 10px 10px rgba(0,0,0,.075), 0 0 18px rgba(82,168,236,.6);
+	box-shadow: inset 0 10px 10px rgba(0,0,0,.075), 0 0 18px rgba(82,168,236,.6);
+}
+.dialogLoginCom .inContent .input-group input.all{
+	border-radius: 5px !important;
+	padding: 1px 2px !important;
+	font-size: 12px !important;
+	width: 250px !important;
+	height: 35px !important;
+	vertical-align: middle;
+	border: 1px solid #CCC;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-width: 1px;
+	border-right-style: solid;
+	margin-bottom: 0px !important;
+	margin-left: 10px;
+}
+.dialogLoginCom .inContent .input-group .input-label{
+	display: block;
+	float: left;
+	text-align: right;
+	width: 150px;
+	line-height: 40px;
+}
+
+.dialogLoginCom .agree{
+	clear: both;
+	height:30px;
+	line-height: 30px;
+	margin-left: 150px;
+}
+
+
+/*重构login弹出框*/
+.dialogLoginCom .login-v2{
+	margin-top:15px;
+	color: #333 !important;
+	font-size: 12px !important;
+}
+.dialogLoginCom .login-v2 .no-register-info a{
+	color: #008CDD !important;
+}
+.dialogLoginCom .login-v2 .no-register-info a:focus{
+	color: #005580;
+}
+.dialogLoginCom .login-v2 .input-group{
+	text-align:center;
+}
+.dialogLoginCom .login-v2 .input-group p input.elexInput{
+	padding:1px 2px !important;
+	font-size: 12px !important;
+	width: 350px !important;
+	height: 35px !important;
+	vertical-align: middle;
+	border: 1px solid #CCC;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-right-width: 1px;
+	border-right-style: solid;
+	margin-bottom: 0px !important;
+}
+/*bootstrap效果*/
+.dialogLoginCom .login-v2 .input-group p input{
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear .2s, box-shadow linear .2s;
+	-moz-transition: border linear .2s, box-shadow linear .2s;
+	-o-transition: border linear .2s, box-shadow linear .2s;
+	transition: border linear .2s, box-shadow linear .2s;
+}
+.dialogLoginCom .login-v2 .input-group p input:focus{
+	border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	outline: thin dotted \9;
+	-webkit-box-shadow: inset 0 10px 10px rgba(0,0,0,.075), 0 0 18px rgba(82,168,236,.6);
+	-moz-box-shadow: inset 0 10px 10px rgba(0,0,0,.075), 0 0 18px rgba(82,168,236,.6);
+	box-shadow: inset 0 10px 10px rgba(0,0,0,.075), 0 0 18px rgba(82,168,236,.6);
+}
+.dialogLoginCom .login-v2 .input-group p input.top{
+	border-top-left-radius: 5px !important;
+	border-top-right-radius: 5px !important;
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+.dialogLoginCom .login-v2 .input-group p input.bottom{
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+	border-bottom-left-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
+}
+.dialogLoginCom .login-v2 .input-group p input.all{
+	border-top-left-radius: 5px !important;
+	border-top-right-radius: 5px !important;
+	border-bottom-left-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
+} 
+.dialogLoginCom .v2-common .login-button{
+	margin-top:10px;
+	height:50px;
+}
+.dialogLoginCom .v2-common .login-button .login-button-v2{
+	background-color: #6D84B4;
+	width: 350px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 35px;
+	border: none;
+	border-radius: 5px;
+	margin: 0 auto;
+	height: 35px;
+	cursor: pointer;
+}
+.dialogLoginCom .v2-common .login-button .login-button-v2 a{
+	color: white;
+	text-decoration:none;
+}
+.dialogLoginCom .v2-common .login-button .login-button-v2 .span-loading{
+	line-height:18px;
+	float:none;
+}
+.dialogLoginCom .v2-common .login-button .elexTipsLogin-v2{
+	color: #900;
+	width: 350px;
+	margin:0 auto;
+	text-align: center;
+}
+.dialogLoginCom .v2-common .third-login-container{
+	height:60px;
+	width: 350px;
+	margin-top: 10px;
+	margin: 0 auto;
+}
+.dialogLoginCom .third-login-container .third-login{
+	position: relative;
+	height: 36px;
+	width:36px;
+	display: block;
+	cursor: pointer;
+	background-image: url(../img/newOfficial/third-part-login-36.png-1305241646.png)/*tpa=http://337.eleximg.com/337/v3static/img/newOfficial/third-part-login-36.png?1305241646*/;
+	background-repeat: no-repeat;
+	float: left;
+	margin: 2px;
+}
+.dialogLoginCom .third-login-container .facebook_connect_2{
+	background-position: 0px 0px;
+}
+.dialogLoginCom .third-login-container .login-google{
+	background-position: 0px -36px;
+}
+.dialogLoginCom .third-login-container .login-orkut{
+	background-position: 0px -108px;
+}
+.dialogLoginCom .third-login-container .login-twitter{
+	background-position: 0px -72px;
+}
+.dialogLoginCom .third-login-container .login-baha{
+	background-position: 0px -180px;
+}
+.dialogLoginCom .third-login-container .login-yahoo{
+	background-position: 0px -252px;
+}
+.dialogLoginCom .third-login-container .gamebase_connent{
+	background-position: 0px -216px;
+}
+.dialogLoginCom .third-login-container .login-msn{
+	background-position: 0px -144px;
+}
+.dialogLoginCom .login-v2 .no-register-info{
+	width:350px;
+	margin:5px auto 0 auto;
+}
+
+/**逐步废弃掉**/
+.fbBtnBlue,.fbBtnBlue b,.fbBtnBlue span,.fbBtnBlue input,.fbBtnGray,.fbBtnGray b,.fbBtnGray span,.fbBtnGray input { display:inline-block; vertical-align:middle; font-size:11px; font-weight:bold; font-family:"Lucida Grande", Tahoma;}
+.fbBtnBlue { background-color:#5872a7; padding:0px 1px 1px 0px; border-color:#29447E #29447E #1A356E; border-width:1px; text-decoration:none!important; border-style:solid;}
+.fbBtnBlue:hover { text-decoration:none!important }
+.fbBtnBlue b,.fbBtnBlue span,.fbBtnBlue input {border:0; cursor:pointer; color:#fff!important; border-top:1px solid #8a9cc2; border-left:1px solid #8a9cc2; padding:0 5px; background-color:#5872a7;}
+.fbBtnGray {background-color:#aaa; border-color:#999; border-width:1px; text-decoration:none!important; border-style:solid;}
+.fbBtnGray:hover { text-decoration:none!important }
+.fbBtnGray b,.fbBtnGray span,.fbBtnGray input {border:0;cursor:pointer;color:#333!important;border:1px solid #fff; padding:0 5px; background-color:#eee;}

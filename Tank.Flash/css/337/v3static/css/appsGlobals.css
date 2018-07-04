@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+.elexHeaderNew .serverList { float:right; height:100%;margin:8px 0 0;}
+.elexHeaderNew #serverInfo li a{ display:inline-block; height:30px; padding:0 7px; line-height:20px; color:#D8DFEA; font-weight:bold;}
+.elexHeaderNew #serverInfo { height:100%; color:#4b67a1; float:right; padding:5px 5px 0 3px;}
+.elexHeaderNew #serverInfo a:hover { color:#4b67a1; text-decoration:none; color:#fff;}
+.filterMenu{background-color: #3B5998;cursor: default;right: 0;padding: 0 0 10px;position: absolute;top: 60px;width: 320px; z-index:10;}
+.filterMenu .arrow{ right:43px; border-color:transparent transparent #3B5998;border-style: solid;border-width: 0 8px 8px;height: 0;position: absolute;top: 4px;width: 0;z-index: 0;}
+#serverMenu li{height:20px;width:150px;float:left;overflow:hidden}
+#serverMenu a{border-right: 0px!important;font-size:13px}
+#serverMenu h2{font-size: 16px;line-height: 23px;color: #0074CC;}
+#serverMenu {text-align:left}
+#current_server{color: #D8DFEA;display: inline-block;font-weight: bold;height: 30px;line-height: 25px;}
+#serverMenu a{color: #D8DFEA;display: inline-block;font-weight: bold;height: 30px;line-height: 25px;}

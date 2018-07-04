@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+body { font-size:12px; font-family:Tahoma,'Lucida Grande',Verdana,Arial,sans-serif; line-height:1.50;}
+input,select,textarea { margin:0; padding:1px 2px; font-size:12px; font-family:"Lucida Grande", Tahoma;}
+pre,td,th {font-size: 12px;}
+#elexAssort #assortCont .inList h3 { font-size:12px;}
+#elexNavr .elexRightCont .inList .inText h3 { font-size:12px;}
+.elexList01 .inText h2 a { font-size:12px;}
+.elexSubDocList_text .inList h2 a { font-size:12px;}
+#gameListNavr h2 { font-size:12px;}
+.fbBtnBlue,.fbBtnBlue b,.fbBtnBlue span,.fbBtnBlue input,.fbBtnGray,.fbBtnGray b,.fbBtnGray span,.fbBtnGray input { font-size:12px;}
+#docAdsList .inTitle h3 {font-size: 12px; }
+#docContent .contBlock .inTitle h2 { font-size:12px; }
+.hottag li { font-size:1.2em; }
+
+
+

@@ -1,0 +1,481 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**用户信息**/
+#elexMyProfile { background-color:#fff; padding:15px 0; width:100%;}
+#elexMyProfile .elexMyProfileWarp { width:950px; margin:0 auto; }
+#elexMyProfile .elexMyProfileLeft { width:480px; float:left; }
+#elexMyProfile #profileLink { height:45px; padding:0 0 5px;}
+#elexMyProfile #profileLink .inImg { float:left; width:40px; padding:5px 0 0;}
+#elexMyProfile #profileLink .inImg a { display:block; width:40px; height:40px; overflow:hidden;}
+#elexMyProfile #profileLink .inImg a img { width:40px;}
+#elexMyProfile #profileLink .inText {height:40px; width:420px; float:right}
+#elexMyProfile #profileLink .inText h1 { font:bold 18px/25px Georgia; height:25px; color:#333; }
+#elexMyProfile #profileLink .inText h1 span { display:block; height:25px; float:left; padding:0 5px 0 0;}
+#elexMyProfile #profileLink .inText h1 sup { font:normal 11px/12px Tahoma; display:none; height:13px; float:left; text-align:center; background:url(../img/userInfo/Level.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/userInfo/Level.gif?2011121501*/ no-repeat;color:#fff;}
+#elexMyProfile #profileLink .inText h1 sup.level_0 { width:20px; background-position:3px 0px;}
+#elexMyProfile #profileLink .inText h1 sup.level_1 { width:27px; background-position:4px -32px;}
+#elexMyProfile #profileLink .inText h1 sup.level_2 { width:32px; background-position:4px -67px;}
+#elexMyProfile #profileLink .inText p { color:#000;}
+#elexMyProfile #profileLink .inText p a { padding:0 5px; color:#900; text-decoration:underline; font:normal 11px/12px Tahoma; }
+#elexMyProfile #profileLink .inText p a:hover { text-decoration:none; color:#600;}
+#elexMyProfile #profileLink .inText p span { color:#888;}
+#elexMyProfile #description { margin:15px 0; padding:10px 15px; width:415px; border-bottom:1px solid #ddd;  border-top:1px solid #ddd; background-color:#EBF5FF;}
+#elexMyProfile #profileInfro {}
+#elexMyProfile #profileInfro ul { display:inline-block; padding:0 0 10px;}
+#elexMyProfile #profileInfro li { width:100%; float:left; font:normal 12px/20px Tahoma; padding:0 0 5px 0;}
+#elexMyProfile #profileInfro li a { color:#900; text-decoration:underline;}
+#elexMyProfile #profileInfro li a:hover { color:#600; text-decoration:none;}
+#elexMyProfile #profileInfro li b { padding:0 5px 0 0;}
+#elexMyProfile #profileInfro li span { font:normal 12px/20px Tahoma; color:#666;}
+#elexMyProfile #elexAddFriends { width:100%;}
+#elexMyProfile #elexAddFriends h1 { padding:0 0 5px;}
+#elexMyProfile #elexAddFriends h1 a { font:normal 11px/20px Tahoma; color:#900; text-decoration:underline;}
+#elexMyProfile #elexAddFriends h1 a:hover { color:#600; text-decoration:none;}
+#elexMyProfile #elexAddFriends p a { display:inline-block; background-color:#900; border-color:#A02828 #600 #600 #A02828; border-right:1px solid #600; border-style:solid; border-width:1px; color:#fff; font:bold 12px/17px Tahoma; padding:2px 12px; text-decoration:none;}
+#elexMyProfile .elexMyProfileRight { width:450px; float:right; }
+
+/**我的成就**/
+#elexBadge { background-color:#333; padding:10px 0; margin:15px 0 0;}
+#elexBadge .inTitle { height:20px; padding:0 15px 15px; color:#ff9e2b; font:normal 15px/20px Tahoma;}
+#elexBadge .inTitle a { font:normal 11px/20px Tahoma; color:#fff; padding:0 0 0 10px; text-decoration:underline; }
+#elexBadge .inTitle a:hover { text-decoration:none;}
+#elexBadge .inTpye { background:url(../img/xbigLine_x.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/xbigLine_x.gif?2011121501*/ repeat-x left bottom; padding:0 0 10px; }
+#elexBadge .inTpye ul { display:inline-block; padding:0 0 0 15px; overflow:hidden;}
+#elexBadge .inTpye li { width:44px; height:44px; float:left; overflow:hidden; margin:0 15px 15px 0; display:inline; border:1px solid #333; }
+#elexBadge .inTpye li.inActive { border:1px solid #eee; }
+#elexBadge .inTpye li a { background:url(../img/editprofileBg.png-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/editprofileBg.png?2011121501*/ no-repeat 0 -44px; display:block; width:34px; height:34px; padding:5px;}
+#elexBadge .inTpye li a:hover { background-position:0 0;}
+#elexBadge .inTpye li img { width:34px; height:34px;}
+#elexBadge .inCont { padding:15px 15px 0;}
+#elexBadge .achieveItem { padding:0 5px;}
+#elexBadge .achieveImg { width:44px; height:44px; float:left; overflow:hidden; margin:10px 0 0;}
+#elexBadge .achieveImg a { background:url(../img/editprofileBg.png-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/editprofileBg.png?2011121501*/ no-repeat 0 -44px; display:block; width:34px; height:34px; padding:5px;}
+#elexBadge .achieveImg a:hover { background-position:0 0;}
+#elexBadge .achieveImg img { width:34px; height:34px;}
+#elexBadge .achieveText { float:right; width:340px;}
+#elexBadge .achieveText p.achieveName { color:#92d8f2; font:bold 12px/17px Tahoma; height:17px; overflow:hidden; }
+#elexBadge .achieveText p.achieveDec { padding:5px 0; color:#eee; line-height:17px;}
+#elexBadge .achieveText p.achieveDec a { color:#ee4e4e; text-decoration:underline; padding:0 0 0 10px}
+#elexBadge .achieveText p.achieveDec a:hover { text-decoration:none;}
+#elexBadge .achieveText p.achieveDate { color:#eee; font:normal 12px/20px Tahoma;}
+
+/**没有成就**/
+#elexNoBadge { background-color:#333; padding:10px 0; margin:15px 0 0;}
+#elexNoBadge .inTitle { padding:0 15px 15px; background:url(../img/xbigLine_x.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/xbigLine_x.gif?2011121501*/ left bottom repeat-x;}
+#elexNoBadge .inTitle h2 { color:#ff9e2b; font:normal 15px/20px Tahoma; height:20px; padding:0 0 5px; }
+#elexNoBadge .inTitle p { color:#fff; font:normal 12px/20px Tahoma;}
+#elexNoBadge .inTitle p a { font:normal 11px/20px Tahoma; color:#EE4E4E; padding:0 0 0 10px; text-decoration:underline; }
+#elexNoBadge .inTitle p a:hover { text-decoration:none;}
+#elexNoBadge .inCont { padding:15px 15px 0;}
+#elexNoBadge .achieveItem { padding:0 5px;}
+#elexNoBadge .achieveImg { width:44px; height:44px; float:left; overflow:hidden; margin:10px 0 0;}
+#elexNoBadge .achieveImg a { background:url(../img/editprofileBg.png-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/editprofileBg.png?2011121501*/ no-repeat 0 -44px; display:block; width:34px; height:34px; padding:5px;}
+#elexNoBadge .achieveImg a:hover { background-position:0 0;}
+#elexNoBadge .achieveImg img { width:34px; height:34px;}
+#elexNoBadge .achieveText { float:right; width:340px;}
+#elexNoBadge .achieveText p.achieveName { color:#92d8f2; font:bold 12px/17px Tahoma; height:17px; overflow:hidden; }
+#elexNoBadge .achieveText p.achieveDec { padding:5px 0; color:#eee; line-height:17px;}
+#elexNoBadge .achieveText p.achieveDec a { color:#ee4e4e; text-decoration:underline; padding:0 0 0 10px}
+#elexNoBadge .achieveText p.achieveDec a:hover { text-decoration:none;}
+#elexNoBadge .achieveText p.achieveDate { color:#eee; font:normal 12px/20px Tahoma;}
+
+
+/**我的游戏**/
+#elexMyGame { padding:20px 0 20px; width:950px; margin:0 auto; background:url(../img/index/mainLine.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/index/mainLine.gif?2011121501*/ left top repeat-x;}
+#elexMyGame #elexMyGameWarp { width:950px; margin:0 auto;}
+#elexMyGame #elexMyGameWarp .elexMyGameTitle { font:bold 18px/25px Georgia; height:25px; padding:5px 0 10px 15px; color:#900;}
+#elexMyGame #elexMyGameWarp .elexMyGameTitle a { color:#900; text-decoration:underline;}
+#elexMyGame #elexMyGameWarp .elexMyGameCont { background-color:#e2e2e2; padding:15px 20px; -moz-border-radius:3px;-webkit-border-radius:3px;}
+#elexMyGame #elexMyGameWarp .elexMyGameCont h3 { font:bold 12px/20px Tahoma; padding:0;}
+#elexMyGame .inList { width:420px; height:110px; float:left; padding:15px 10px; overflow:hidden;}
+#elexMyGame .inList .inImg { width:100px; height:94px; float:left; background-color:#222;padding:0 0 3px;background:url(../img/bottomLine_01.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/bottomLine_01.gif?2011121501*/ bottom left no-repeat;margin: 5px 0 0;}
+#elexMyGame .inList .inImg b { background-color:#222; padding:3px 3px 0; display:block; width:94px; height:73px; overflow:hidden;}
+#elexMyGame .inList .inImg img { width:94px;}
+#elexMyGame .inList .inImg p { height:18px; background-color:#222; font:normal 11px/18px Tahoma; text-align:center; color:#fff;}
+#elexMyGame .inList .inText { float:right; width:280px; padding:0 20px 0 0;}
+#elexMyGame .inList .inText h1 { font:bold 13px/20px Tahoma; padding:0 0 5px;}
+#elexMyGame .inList .inText h1 a { color:#600;}
+#elexMyGame .inList .inText h1 a:hover { color:#333;}
+#elexMyGame .inList .inText p a { text-decoration:none; color:#900; padding:0 0 0 5px;}
+#elexMyGame .inList .inText p a:hover { text-decoration:underline;}
+#elexMyGame .inList .inText p span { font-size:12px; color:#666;}
+#elexMyGame .inList .inText .inServer { color:#000;}
+
+/**收藏游戏**/
+#elexFavouriteGame { padding:20px 0 20px; width:100%; background:url(../img/index/mainLine.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/index/mainLine.gif?2011121501*/ left top repeat-x;}
+#elexFavouriteGame #elexFavouriteGameWarp { width:950px; margin:0 auto;}
+#elexFavouriteGame #elexFavouriteGameWarp .elexMyGameTitle { font:bold 18px/25px Georgia; height:25px; padding:5px 0 10px 15px; color:#900;}
+#elexFavouriteGame #elexFavouriteGameWarp .elexMyGameTitle a { color:#900; text-decoration:underline;}
+#elexFavouriteGame #elexFavouriteGameWarp .elexMyGameCont { background-color:#e2e2e2; padding:15px 20px; -moz-border-radius:3px;-webkit-border-radius:3px;}
+#elexFavouriteGame #elexFavouriteGameWarp .elexMyGameCont h3 { font:bold 12px/20px Tahoma; padding:0;}
+#elexFavouriteGame .inList { width:420px; height:110px; float:left; padding:15px 10px; overflow:hidden;}
+#elexFavouriteGame .inList .inImg { width:100px; height:94px; float:left; background-color:#222;padding:0 0 3px;background:url(../img/bottomLine_01.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/bottomLine_01.gif?2011121501*/ bottom left no-repeat;margin: 5px 0 0;}
+#elexFavouriteGame .inList .inImg b { background-color:#222; padding:3px 3px 0; display:block; width:94px; height:73px; overflow:hidden;}
+#elexFavouriteGame .inList .inImg img { width:94px;}
+#elexFavouriteGame .inList .inImg p { height:18px; background-color:#222; font:normal 11px/18px Tahoma; text-align:center; color:#fff;}
+#elexFavouriteGame .inList .inText { float:right; width:280px; padding:0 20px 0 0;}
+#elexFavouriteGame .inList .inText h1 { font:bold 13px/20px Tahoma; padding:0 0 5px;}
+#elexFavouriteGame .inList .inText h1 a { color:#600;}
+#elexFavouriteGame .inList .inText h1 a:hover { color:#333;}
+#elexFavouriteGame .inList .inText p a { text-decoration:none; color:#900; padding:0 0 0 5px;}
+#elexFavouriteGame .inList .inText p a:hover { text-decoration:underline;}
+#elexFavouriteGame .inList .inText p span { font-size:12px; color:#666;}
+#elexFavouriteGame .inList .inText .inServer { color:#000;}
+
+/**我的朋友**/
+#elexFriends { padding:0; width:100%;}
+#elexFriends .elexFriendsWarp { width:950px; margin:0 auto; background:url(../img/index/mainLine.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/index/mainLine.gif?2011121501*/ left top repeat-x; padding:20px 0;}
+#elexFriends .elexFriendsTitle { font:bold 18px/25px Georgia; height:25px; padding:5px 0 10px 15px;}
+#elexFriends .elexFriendsTitle a { color:#900; text-decoration:underline;}
+#elexFriends #elexFriendsCont { background-color:#e2e2e2; padding:20px 20px 5px; -moz-border-radius:3px;-webkit-border-radius:3px;}
+#elexFriends .elexFriendsList { width:220px; float:left; height:100px; text-align:center;}
+#elexFriends .elexFriendsList .inImg { width:220px; height:60px;}
+#elexFriends .elexFriendsList .inImg a { display:inline-block; width:60px; height:60px; overflow:hidden;}
+#elexFriends .elexFriendsList .inImg img { width:60px;}
+#elexFriends .elexFriendsList .inName { padding:5px 25px 0; font:normal 12px/18px Tahoma;}
+
+/**我的粉丝**/
+#elexFuns { padding:0; width:100%;}
+#elexFuns .elexFunsWarp { width:950px; margin:0 auto; background:url(../img/index/mainLine.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/index/mainLine.gif?2011121501*/ left top repeat-x; padding:20px 0;}
+#elexFuns .elexFunsTitle { font:bold 18px/25px Georgia; height:25px; padding:5px 0 10px 15px;}
+#elexFuns .elexFunsTitle a { color:#900; text-decoration:underline;}
+#elexFuns #elexFunsCont { background-color:#e2e2e2; padding:20px 20px 5px; -moz-border-radius:3px;-webkit-border-radius:3px;}
+#elexFuns .elexFunsList { width:220px; float:left; height:100px; text-align:center;}
+#elexFuns .elexFunsList .inImg { width:220px; height:60px;}
+#elexFuns .elexFunsList .inImg a { display:inline-block; width:60px; height:60px; overflow:hidden;}
+#elexFuns .elexFunsList .inImg img { width:60px;}
+#elexFuns .elexFunsList .inName { padding:5px 25px 0; font:normal 12px/18px Tahoma;}
+
+/**提示信息**/
+#elexMessage { background-color:#fff; padding:0 0 15px;}
+#elexMessage .elexMessageWarp { background:url(../img/messagesBg.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/messagesBg.gif?2011121501*/ top left repeat-x; height:500px; width:950px; margin:0 auto; position:relative; }
+#elexMessage #inTips { background:url(../img/messages_ico.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/messages_ico.gif?2011121501*/ left center no-repeat; height:130px; width:550px; margin:250px 0 0 475px; padding:0 0 0 180px; position:absolute; top:-100px; left:-370px; }
+#elexMessage #inTips .inTitle{ font:bold 16px/30px Tahoma; background:url(../img/xline_x.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/xline_x.gif?2011121501*/ bottom left repeat-x; padding:0 0 5px 5px; height:30px;}
+#elexMessage #inTips .inContent { padding:15px 0 0 5px;}
+#elexMessage #inTips .inContent p { color:#666; padding:0 0 10px 0; font:normal 13px/20px Tahoma;}
+#elexMessage #inTips .inContent a { color:#F60; text-decoration:underline; font:normal 12px/20px Tahoma;}
+#elexMessage #inTips .inContent a:hover { text-decoration:none; }
+
+/**获取密码**/
+#elexGetPass { background-color:#fff; padding:40px 0 40px;}
+#elexGetPass .elexGetPassWarp { width:950px; margin:0 auto; position:relative;}
+#elexGetPass .elexGetPassLeft { width:620px; height:220px; float:left; }
+#elexGetPass .elexGetPassLeft .inTitle { font:bold 18px/25px Tahoma; padding:0 0 15px; }
+#elexGetPass .elexGetPassLeft .inTitle a { padding:0 5px; color:#900;}
+#elexGetPass .elexGetPassLeft .inForm { width:100%;}
+#elexGetPass .inForm form { margin:0;}
+#elexGetPass .inForm .titleName {font: bold 13px/20px Tahoma; padding:0 0 5px;}
+#elexGetPass .inForm .contInput {font: bold 13px/20px Tahoma; padding:0 0 10px;}
+#elexGetPass .inForm .contInput span { font:normal 12px/20px Tahoma; padding:0 0 0 15px;}
+#elexGetPass .inForm .contInput span.error { color:#c00;}
+#elexGetPass .inForm .contInput span.success { color:#0c0}
+#elexGetPass .inForm input { font:normal 12px/20px Tahoma; color:#000; }
+#elexGetPass .inForm input.inText { width:250px; height:22px; border:1px solid #ddd; border-top-color:#7C7C7C; border-left-color:#7C7C7C; padding:0 5px;}
+#elexGetPass .inForm input.inCode { width:60px; height:22px; border:1px solid #ddd; border-top-color:#7C7C7C; border-left-color:#7C7C7C; padding:0 5px;}
+#elexGetPass .inForm a.aCode { font:normal 12px/24px Tahoma; padding:0 0 0 15px;}
+#elexGetPass .inForm .inBtn { padding:10px 0 0 0;}
+#elexGetPass .inForm input.inSubmit {background-color:#369; border:1px solid #333; color:#fff; font:bold 12px/20px Tahoma;padding:2px 15px; }
+#elexGetPass .elexGetPassRight { width:300px; height:220px; float:right;}
+
+/**重置密码**/
+#elexResetPass { background-color:#fff; padding:20px 0 40px;}
+#elexResetPass .elexResetPassWarp { width:950px; margin:0 auto; position:relative;}
+#elexResetPass .resetElexLeft{ width:620px; float:left; }
+#elexResetPass .resetElexLeft .inTitle { font:bold 19px/30px Tahoma; padding:0 0 10px;}
+#elexResetPass .resetElexLeft .inContent { background-color: #eee; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; padding:20px 20px;}
+#elexResetPass .resetElexLeft td { padding:8px 5px; vertical-align:top; color:#222; font:normal 12px/18px Tahoma; }
+#elexResetPass td.tdLeft { text-align:right;}
+#elexResetPass td.tdLeft .tdTitle { font:bold 13px/20px Tahoma;}
+#elexResetPass td.tdMiddle { width:280px;}
+#elexResetPass td.tdMiddle input { padding:0; margin:0; font:normal 12px/20px Tahoma;}
+#elexResetPass td.tdMiddle input.inText {border-color:#7C7C7C #C3C3C3 #ddd; border-style:solid; border-width:1px; height:20px; width:270px; padding:0;}
+#elexResetPass td.tdMiddle.ingBtn {}
+#elexResetPass td.tdMiddle.ingBtn { padding:5px 0 5px 5px;}
+#elexResetPass td.tdMiddle.ingBtn input {width:80px; height:22px; border:1px solid #333; background-color:#369; padding:0; margin:10px 0 0; font:bold 14px/18px Tahoma; color:#fff; cursor:pointer;-moz-border-radius:3px;}
+#elexResetPass #change_pwd_msg {border:1px solid #600; border-left:0; border-right:0; margin:15px 0 0; padding:10px 15px 10px 20px; font:normal 12px/18px Tahoma; color:#900; background:#ffe5e5 url(../img/userInfo/ico1.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/userInfo/ico1.gif?2011121501*/ no-repeat 10px center; cursor:pointer;}
+#elexResetPass .resetElexRight { width:300px; float:right;}
+
+/**注册**/
+.elexRegistr { width:100%; background-color:#fff; padding:15px 0 25px;}
+.elexRegistr form{margin:0;padding:0;}
+.elexRegistr .fbBtn{ padding-bottom:15px; }
+.elexRegistr .elexRegistrWarp { width:950px; margin:0 auto;}
+.elexRegistr .registrLeft { width:620px; float:left; }
+.elexRegistr .registrLeft form { margin:0;}
+.elexRegistr .registrForm { width:620px; }
+.elexRegistr .registrForm h3 { font:bold 19px/25px Tahoma; padding:0 0 15px;}
+.elexRegistr .registrTable { background-color: #eee; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; width:610px; padding:20px 10px 20px 0;}
+.elexRegistr .registrTable .errSum { border:1px solid #600; border-left:0; border-right:0; margin:0 0 10px; padding:10px 15px; background-color:#ffe5e5;}
+.elexRegistr .registrTable .errSum p { font:bold 13px/18px Tahoma; padding:0 0 5px;}
+.elexRegistr .registrTable .errSum ul { margin:0; padding:0 0 0 10px;}
+.elexRegistr .registrTable .errSum ul li { font:normal 12px/18px Tahoma; color:#900; background:url(../img/userInfo/ico1.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/userInfo/ico1.gif?2011121501*/ no-repeat 0 9px; padding:0 0 0 8px; }
+.elexRegistr .registrTable table { width:100%;}
+.elexRegistr .registrTable td { padding:5px 5px; vertical-align:top; color:#222; font:normal 12px/18px Tahoma; }
+.elexRegistr td.tdLeft { text-align:right; width:140px;}
+.elexRegistr td.tdLeft .tdTitle { font:bold 13px/20px Tahoma;}
+.elexRegistr td.tdLeft .tips { color:#999; font-style:italic;}
+.elexRegistr td.tdMiddle { width:280px;}
+.elexRegistr td.tdMiddle p {}
+.elexRegistr td.tdMiddle input { padding:0; margin:0; font:normal 12px/20px Tahoma;}
+.elexRegistr td.tdMiddle input.text {border-color:#7C7C7C #C3C3C3 #ddd; border-style:solid; border-width:1px; height:20px; width:270px; padding:0;}
+.elexRegistr td.tdMiddle select { font:normal 12px/15px Tahoma; height:20px;}
+.elexRegistr td.tdMiddle.checkbox p { padding-top:5px;}
+.elexRegistr td.tdMiddle.checkbox p input.checkbox { width:16px; height:16px; float:left; margin:5px 0 0;  vertical-align:middle;}
+.elexRegistr td.tdMiddle.checkbox p label { margin:0; display:block; float:right; width:255px;}
+.elexRegistr td.tdMiddle.regBtn p { padding:5px 0;}
+.elexRegistr td.tdMiddle.regBtn p input {width:80px; height:22px; border:1px solid #333; background-color:#369; padding:0; margin:10px 0 0; font:bold 14px/18px Tahoma; color:#fff; cursor:pointer;-moz-border-radius:3px;}
+.elexRegistr td.tdRight { width:auto; padding:0 0 0 5px }
+.elexRegistr td.tdRight p { margin:0; padding:5px 0 5px 25px; }
+.elexRegistr td.tdRight p.error { background:url(../img/msg.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/msg.gif?2011121501*/ no-repeat 0 4px; color:#c00; line-height:15px;}
+.elexRegistr td.tdRight p.success { background:url(../img/msg.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/msg.gif?2011121501*/ no-repeat 0 -245px; color:#0C0}
+.elexRegistr td a.red { color:#900;}
+.elexRegistr td a.red:hover { color:#600;}
+.elexRegistr .registrRight { width:300px; float:right; }
+.elexRegistr .registrRight .nobg { background:none!important;}
+.elexRegistr .registrRight .inText { background:url(../img/xline_x.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/xline_x.gif?2011121501*/ bottom left repeat-x; padding:0 0 15px; margin:0 0 15px; }
+.elexRegistr .registrRight .inText .inTitle { font:bold 14px/20px Tahoma; padding:0 0 10px; color:#900;}
+.elexRegistr .registrRight .inText .inContent { padding:0 10px 0 40px; background:url(../img/userInfo/ico.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/userInfo/ico.gif?2011121501*/ no-repeat;}
+.elexRegistr .registrRight .inText .inContent p { font:normal 12px/20px Tahoma; padding:0 0 15px}
+.elexRegistr .registrRight .inText .inContent.itemBg1 { background-position:0 -319px;}
+.elexRegistr .registrRight .inText .inContent.itemBg2 { background-position:0 -486px}
+
+/**登陆**/
+.elexLogin { width:100%; background-color:#fff; padding:40px 0 30px; height:400px;}
+.elexLogin form{margin:0;padding:0;}
+.elexLogin .fbBtn{ padding-bottom:15px; }
+.elexLogin .elexLoginWarp { width:950px; margin:0 auto;}
+.elexLogin .loginLeft { width:450px; float:left; }
+.elexLogin .loginLeft form { margin:0;}
+.elexLogin .loginForm { width:450px; }
+.elexLogin .loginForm h3 { font:bold 20px/25px Tahoma; padding:0 0 15px;}
+.elexLogin .loginForm .userName { padding:0 0 10px;}
+.elexLogin .loginForm .userName p { font:bold 14px/20px Tahoma; padding:0 0 5px;}
+.elexLogin .loginForm .userName p .bg { background-color:#eee; border:1px solid #bbb; border-top-color:#333; border-left-color:#333;}
+.elexLogin .loginForm .userName input { width:350px; height:22px; border:1px solid #ddd; border-top-color:#7C7C7C; border-left-color:#7C7C7C; padding:0 5px; font:normal 12px/20px Tahoma; color:#000; }
+.elexLogin .loginForm .userpassword { padding:0 0 10px;}
+.elexLogin .loginForm .userpassword p { font:bold 14px/20px Tahoma; padding:0 0 5px;}
+.elexLogin .loginForm .userpassword p .bg { background-color:#eee; border:1px solid #bbb; border-top-color:#333; border-left-color:#333;}
+.elexLogin .loginForm .userpassword input { width:350px; height:22px; border:1px solid #ddd; border-top-color:#7C7C7C; border-left-color:#7C7C7C; padding:0 5px; font:normal 12px/20px Tahoma; color:#000;}
+.elexLogin .loginForm .userpassword a { padding:0 5px; font:normal 11px/20px Tahoma; color:#900; text-decoration:underline; }
+.elexLogin .loginForm .userpassword a:hover { color:#600; text-decoration:none;}
+.elexLogin .loginForm .userLogin { height:25px; padding:5px 90px 0 0;}
+.elexLogin .loginForm .userLogin .submit { float:left; height:25px;}
+.elexLogin .loginForm .userLogin .submit input{ background-color:#369; border:1px solid #333; color:#fff; font:bold 12px/20px Tahoma; padding:2px 15px;}
+.elexLogin .loginForm .userLogin .rememeberMe { float:right; height:25px; font:normal 12px/25px Tahoma;}
+.elexLogin .loginForm .userLogin .rememeberMe input { vertical-align:middle; margin:0 5px 0 0;}
+.elexLogin #login_error { width:320px; border:1px solid #600; border-left:0; border-right:0; margin:10px 0 0 0; padding:10px 20px; font:normal 12px/18px Tahoma; color:#900; background:#ffe5e5 url(../img/userInfo/ico1.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/userInfo/ico1.gif?2011121501*/ no-repeat 10px center;}
+.elexLogin .loginRight { width:450px; height:220px; float:right; }
+.elexLogin .loginRight .inText { background-color:#EBF5FF; border-bottom:1px solid #C7D0D8; border-top:1px solid #C7D0D8; padding:20px; font:normal 12px/18px Tahoma; }
+.elexLogin .loginRight .inText h3 { font:bold 15px/18px Tahoma; padding:0 0 10px;}
+.elexLogin .loginRight .inText p { padding:0 0 10px; }
+.elexLogin .loginRight .inText a { display:inline-block; background-color:#900; border-color:#A02828 #600 #600 #A02828; border-right:1px solid #600; border-style:solid; border-width:1px; color:#fff; font:bold 12px/17px Tahoma; padding:2px 12px; text-decoration:none;-moz-border-radius: 3px 3px 3px 3px;}
+
+/**修改密码**/
+#elexRepassword { background-color:#fff; padding:20px 0 40px;}
+#elexRepassword .elexRepasswordWarp { width:950px; margin:0 auto; position:relative;}
+#elexRepassword .elexRepasswordLeft { }
+#elexRepassword .elexRepasswordLeft .inTitle { font:bold 19px/20px Tahoma; padding:0 0 10px;}
+#elexRepassword .elexRepasswordLeft .inLink { height:20px; padding:0 0 5px;}
+#elexRepassword .elexRepasswordLeft .inLink span { padding:0 8px; color:#900;}
+#elexRepassword .elexRepasswordLeft .inLink a { padding:0 8px; color:#999;}
+#elexRepassword .elexRepasswordLeft .inContent { background-color: #eee; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; padding:20px 20px;}
+#elexRepassword .elexRepasswordLeft .reTitle { font:bold 16px/25px Tahoma; padding:0 0 10px; color:#900; }
+#elexRepassword table { width:100%;background-color: #eee;}
+#elexRepassword td { padding:10px 5px; vertical-align:top; color:#222; font:normal 12px/18px Tahoma; }
+#elexRepassword td.tdLeft { text-align:right; width:180px; }
+#elexRepassword td.tdLeft .tdTitle { font:bold 13px/20px Tahoma;}
+#elexRepassword td.tdLeft .tips { color:#999; font-style:italic;}
+#elexRepassword td.tdMiddle { width:280px;}
+#elexRepassword td.tdMiddle input { padding:0; margin:0; font:normal 12px/20px Tahoma;}
+#elexRepassword td.tdMiddle input.inText {border-color:#7C7C7C #C3C3C3 #ddd; border-style:solid; border-width:1px; height:20px; width:300px; padding:0;}
+#elexRepassword td.tdMiddle textarea.inText {border-color:#7C7C7C #C3C3C3 #ddd; border-style:solid; border-width:1px; height:100px; width:300px; padding:0; overflow:hidden;}
+#elexRepassword td.tdMiddle select { font:normal 12px/15px Tahoma; height:20px;}
+#elexRepassword td span { padding:0 10px;}
+#elexRepassword td input { padding:0; margin:0; font:normal 12px/20px Tahoma; vertical-align:middle;}
+#elexRepassword td.tdMiddle.rePasswordBtn { width:auto!important;}
+#elexRepassword td.tdMiddle.rePasswordBtn p { padding:5px 0;}
+#elexRepassword td.tdMiddle.rePasswordBtn p input {width:80px; height:22px; border:1px solid #333; background-color:#369; padding:0; margin:10px 0 0; font:bold 14px/18px Tahoma; color:#fff; cursor:pointer;-moz-border-radius:3px;}
+#elexRepassword td a.red { color:#900;}
+#elexRepassword td a.red:hover { color:#600;}
+#elexRepassword #change_pwd_msg {border:1px solid #600; border-left:0; border-right:0; margin:15px 0 0; padding:10px 15px 10px 20px; font:normal 12px/18px Tahoma; color:#900; background:#ffe5e5 url(../img/userInfo/ico1.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/userInfo/ico1.gif?2011121501*/ no-repeat 10px center; cursor:pointer;}
+#elexRepassword #change_pwd_msg.green {border:1px solid #bfe4bf; border-left:0; border-right:0; color:#266926; background:#f6fef6 url(../img/userInfo/ico1.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/userInfo/ico1.gif?2011121501*/ no-repeat 10px center; }
+#elexRepassword .elexRepasswordRight { width:300px; float:right; }
+
+
+
+/**编辑用户信息**/
+#elexEdit { background-color:#fff; padding:20px 0 40px;}
+#elexEdit .elexEditWarp { width:100%; margin:0 auto; position:relative;}
+#elexEdit .elexEditLeft { }
+#elexEdit .elexEditLeft .inTitle { font:bold 19px/20px Tahoma; padding:0 0 10px;}
+#elexEdit .elexEditLeft .inLink { height:20px; padding:0 0 5px;}
+#elexEdit .elexEditLeft .inLink span { padding:0 8px; color:#900;}
+#elexEdit .elexEditLeft .inLink a { padding:0 8px; color:#999;}
+#elexEdit .elexEditLeft .inContent { background-color:#eee; border-bottom:1px solid #ccc; border-top:1px solid #ccc; padding:20px 20px;}
+#elexEdit .elexEditLeft .reTitle { font:bold 16px/25px Tahoma; padding:0 0 10px; color:#900; }
+#elexEdit table { width:100%;background-color:#eee;}
+#elexEdit td { padding:10px 5px; vertical-align:top; color:#222; font:normal 12px/18px Tahoma; }
+#elexEdit td.tdLeft { text-align:right; width:140px;}
+#elexEdit td.tdLeft .tdTitle { font:bold 13px/20px Tahoma;}
+#elexEdit td.tdLeft .tips { color:#999; font-style:italic;}
+#elexEdit td.tdMiddle { width:380px;}
+#elexEdit td.tdMiddle input { padding:0; margin:0; font:normal 12px/20px Tahoma;}
+#elexEdit td.tdMiddle input.inText {border-color:#7C7C7C #C3C3C3 #ddd; border-style:solid; border-width:1px; height:20px; width:300px; padding:0;}
+#elexEdit td.tdMiddle textarea.inText {border-color:#7C7C7C #C3C3C3 #ddd; border-style:solid; border-width:1px; height:100px; width:300px; padding:0; overflow:hidden; font:normal 12px/20px Tahoma;}
+#elexEdit td.tdMiddle select { font:normal 12px/15px Tahoma; height:20px;}
+#elexEdit td span { padding:0 10px;}
+#elexEdit td input { padding:0; margin:0; font:normal 12px/20px Tahoma; vertical-align:middle;}
+#elexEdit td.tdMiddle.regBtn { width:auto!important;}
+#elexEdit td.tdMiddle.regBtn p { padding:5px 0;}
+#elexEdit td.tdMiddle.regBtn p input {width:auto; border:1px solid #333; background-color:#369; padding:2px 10px; margin:10px 0 0; font:bold 14px/18px Tahoma; color:#fff; cursor:pointer;-moz-border-radius:3px;}
+#elexEdit td a { color:#900; padding:0 5px;}
+#elexEdit td a:hover { color:#600;}
+#elexEdit td li a { color:#666; padding:0 5px; text-decoration:underline;}
+#elexEdit td li a:hover { color:#999; text-decoration:none;}
+#elexEdit #update_profile_msg {margin:15px 0 0; padding:10px 15px 10px 20px; font:normal 12px/18px Tahoma;}
+#elexEdit #update_profile_msg.red {border:1px solid #600; border-left:0; border-right:0; color:#900; background:#ffe5e5 url(../img/userInfo/ico1.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/userInfo/ico1.gif?2011121501*/ no-repeat 10px center; }
+#elexEdit #update_profile_msg.green {border:1px solid #bfe4bf; border-left:0; border-right:0; color:#266926; background:#f6fef6 url(../img/userInfo/ico1.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/userInfo/ico1.gif?2011121501*/ no-repeat 10px center; }
+#elexEdit .elexEditRight { width:300px; float:right; }
+#elexEdit #elexMyPages { padding:10px;}
+#elexEdit #elexMyPages li { background:#fff url(../img/newIco.png-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/newIco.png?2011121501*/ no-repeat 5px 13px; padding:0 0 0 20px; height:30px;}
+#elexEdit #elexMyPages li a { font:normal 12px/30px Tahoma; color:#000; text-decoration:underline}
+#elexEdit #elexMyPages li a:hover { color:#666; text-decoration:none;}
+#elexEdit #elexMyPages li.bg { background:#eee url(../img/newIco.png-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/newIco.png?2011121501*/ no-repeat 5px 13px;}
+#elexEdit .classNav { padding:0 0 10px;}
+#elexEdit .classNav a { padding:0 5px; color:#999;}
+#elexEdit .classNav span { padding:0 5px; color:#900;}
+
+/**邀请好友**/
+#elexInviteFriend { background-color:#fff; padding:40px 0 40px;}
+#elexInviteFriend .elexInviteFriendWrap { width:950px; margin:0 auto; position:relative;}
+#elexInviteFriend .elexInviteLeft { width:620px; float:left; }
+#elexInviteFriend .elexInviteLeft .inTitle { font:bold 18px/25px Tahoma; padding:0 0 15px; }
+#elexInviteFriend .elexInviteLeft .inTitle a { padding:0 5px; color:#900;}
+#elexInviteFriend .elexInviteLeft .inContent { background-color:#eee; border-bottom:1px solid #ccc; border-top:1px solid #ccc; padding:20px; height:220px}
+#elexInviteFriend .elexInviteLeft .inContent form { margin:0;}
+#elexInviteFriend .elexInviteLeft .inContent p { font:bold 14px/20px Tahoma; padding:0 0 5px;}
+#elexInviteFriend .elexInviteLeft .inContent input { font:normal 12px/20px Tahoma; color:#000; }
+#elexInviteFriend .elexInviteLeft .inContent input.inText { width:300px; height:22px; border:1px solid #ddd; border-top-color:#7C7C7C; border-left-color:#7C7C7C; padding:0 5px;}
+#elexInviteFriend .elexInviteLeft .inContent input.inSubmit {background-color:#369; border:1px solid #333; color:#fff; font:bold 12px/20px Tahoma;padding:2px 15px; margin:20px 0 0; }
+#elexInviteFriend #errcontent li {margin:15px 0 0; padding:10px 15px 10px 20px; font:normal 12px/18px Tahoma;}
+#elexInviteFriend #errcontent li.red {border:1px solid #600; border-left:0; border-right:0; color:#900; background:#ffe5e5 url(../img/userInfo/ico1.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/userInfo/ico1.gif?2011121501*/ no-repeat 10px center; }
+#elexInviteFriend .elexInviteRight { width:300px; height:220px; float:right;}
+
+/**好友管理页面**/
+#elexfriendMmanage { background-color:#fff; padding:10px 0 30px;}
+#elexfriendMmanage .elexfriendMmanageWrap { width:950px; margin:0 auto; position:relative;}
+#elexfriendMmanage .inTitle { padding:0 0 5px; background:url(../img/xline_x.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/xline_x.gif?2011121501*/ bottom left repeat-x; margin:0 0 2px;}
+#elexfriendMmanage .inTitle a { padding:0; color:#900; font-weight:normal; text-decoration:underline;}
+#elexfriendMmanage .inTitle a:hover { text-decoration:none;}
+#elexfriendMmanage .inTitle span { padding:0; color:#333; font:bold 13px/25px Tahoma;}
+#elexfriendMmanage .inTitle b { font-weight:normal; padding:0 10px}
+#elexfriendMmanage .elexFriendsListTab { width:100%}
+#elexfriendMmanage .elexFriendsListTab table { width:100%; background-color:#eee;}
+#elexfriendMmanage .elexFriendsListTab td { padding:5px 10px; text-align:center;}
+#elexfriendMmanage .elexFriendsListTab td a {color:#600; font:normal 13px/30px Tahoma;}
+#elexfriendMmanage .elexFriendsListTab td a.favourite { background:url(../img/ico.png-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/ico.png?2011121501*/ no-repeat 0 -993px; padding:0 0 0 20px;}
+#elexfriendMmanage .elexFriendsListTab td a.remove { background:url(../img/ico.png-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/ico.png?2011121501*/ no-repeat 0 -810px; padding:0 0 0 20px; }
+#elexfriendMmanage .elexFriendsListTab tr.tdbg td { background-color:#fff;}
+#elexfriendMmanage .elexFriendsListTab td.listUserName { text-align:left;}
+#elexfriendMmanage .elexFriendsListTab td.listUserName img { vertical-align:middle; width:30px; height:30px}
+#elexfriendMmanage .elexFriendsListTab td.listUserName a { padding:0 15px 0 0; color:#000; font:bold 12px/30px Tahoma;}
+#elexfriendMmanage .elexFriendsListTab tr.inTdTitle td { height:35px; font:bold 14px/35px Tahoma; background-color:#aaa; color:#fff;}
+#elexfriendMmanage #elexFriendsNextPage { padding:5px 0 0; background:url(../img/xline_x.gif-2011121501.gif)/*tpa=http://337.eleximg.com/337/v3static/img/xline_x.gif?2011121501*/ top left repeat-x; margin:2px 0 0; text-align:right; }
+#elexfriendMmanage #elexFriendsNextPage a { display:inline-block; width:16px; height:16px; border:1px solid #ccc; background-color:#eee; font:bold 12px/16px Tahoma; text-align:center; color:#666; margin:0 1px;}
+#elexfriendMmanage #elexFriendsNextPage a:hover { background-color:#f4f4f4; color:#999;}
+#elexfriendMmanage #elexFriendsNextPage span { padding:0 5px 0 0; font:bold 13px/16px Tahoma;}
+#elexfriendMmanage #elexFriendsNextPage a.active { border:1px solid #fff; background-color:#fff; color:#c00;}
+
+/**上传游戏信息**/
+#elexUserUpGame { background-color:#fff; padding:20px 0 30px;}
+#elexUserUpGame .elexUserUpGameWrap { width:950px; margin:0 auto; position:relative;}
+#elexUserUpGame .elexUserUpGameLeft { width:620px; float:left;}
+#elexUserUpGame .elexUserUpGameLeft .inTitle { padding:0 0 15px;}
+#elexUserUpGame .elexUserUpGameLeft .inTitle h2 { font:bold 18px/25px Tahoma;}
+#elexUserUpGame .elexUserUpGameLeft .inTitle p { font:normal 12px/20px Tahoma; padding:5px 0 0;}
+#elexUserUpGame .elexUserUpGameLeft .inTitle p span { display:inline-block; height:20px; padding:0 15px 0 30px; background:url(../img/upload_unchecked.gif-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/upload_unchecked.gif?2011121501*/ 10px center no-repeat;}
+#elexUserUpGame .elexUserUpGameLeft .inTitle p span.inActive { color:#900;}
+#elexUserUpGame .inForm { background-color:#eee; border-bottom:1px solid #ccc; border-top:1px solid #ccc; padding:20px 20px;}
+#elexUserUpGame table { width:100%;}
+#elexUserUpGame td { padding:10px 5px; vertical-align:top; color:#222; font:normal 12px/18px Tahoma; }
+#elexUserUpGame td.tdLeft { text-align:right; width:140px;}
+#elexUserUpGame td.tdLeft .tdTitle { font:bold 13px/20px Tahoma;}
+#elexUserUpGame td.tdLeft .tips { color:#999; font-style:italic;}
+#elexUserUpGame td.tdMiddle { width:380px;}
+#elexUserUpGame td.tdMiddle input { padding:0; margin:0; font:normal 12px/20px Tahoma;}
+#elexUserUpGame td.tdMiddle input.inText {border-color:#7C7C7C #C3C3C3 #ddd; border-style:solid; border-width:1px; height:20px; width:300px; padding:0;}
+#elexUserUpGame td.tdMiddle textarea.inText {border-color:#7C7C7C #C3C3C3 #ddd; border-style:solid; border-width:1px; height:100px; width:300px; padding:0; overflow:hidden; font:normal 12px/20px Tahoma;}
+#elexUserUpGame td.tdMiddle select { font:normal 12px/15px Tahoma; height:20px; width:300px; }
+#elexUserUpGame td span { padding:0 10px;}
+#elexUserUpGame td input { padding:0; margin:0; font:normal 12px/20px Tahoma; vertical-align:middle;}
+#elexUserUpGame td.tdMiddle.regBtn { width:auto!important;}
+#elexUserUpGame td.tdMiddle.regBtn p { padding:5px 0;}
+#elexUserUpGame td.tdMiddle.regBtn p input {width:auto; border:1px solid #333; background-color:#369; padding:2px 10px; margin:10px 0 0; font:bold 14px/18px Tahoma; color:#fff; cursor:pointer;-moz-border-radius:3px;}
+#elexUserUpGame td a { color:#900; padding:0 5px;}
+#elexUserUpGame td a:hover { color:#600;}
+#elexUserUpGame .elexUserUpGameRioght {width:300px; float:right;}
+
+
+/**积分信息**/
+.elexExp { width:100%; background-color:#fff; padding:20px 0 25px;}
+.elexExp .elexExpWrap { width:950px; margin:0 auto;}
+.elexExp .elexExpWrap .inLeft { width:950px; float:left;}
+.elexExp .elexExpWrap .inLeft .inTitle h2 { font:bold 19px/20px Tahoma; padding:0 0 10px;}
+.elexExp .elexExpWrap .inLeft .inContent { background-color:#eee; border-bottom:1px solid #ccc; border-top:1px solid #ccc; padding:10px;}
+.elexExp .elexExpWrap .inLeft .inContent table { width:100%;}
+.elexExp .elexExpWrap .inLeft .inContent tr.inTdTitle td { font:bold 14px/25px Tahoma; padding:0 5px 5px; background-color:#eee;}
+.elexExp .elexExpWrap .inLeft .inContent td { background-color:#fff; padding:5px 8px; font:normal 12px/20px Tahoma;}
+.elexExp .elexExpWrap .inLeft .inContent td a { color:#600; text-decoration:underline;}
+.elexExp .elexExpWrap .inLeft .inContent td a:hover {text-decoration:none;}
+.elexExp .elexExpWrap .inLeft .inContent tr.tabg td { background-color:#eee;}
+.elexExp .elexExpWrap .inRight { width:300px; height:220px; float:right; display:none}
+
+/**站内货币兑换**/
+#elexExchange { width:100%; background-color:#fff; padding:20px 0 25px;}
+#elexExchange .elexExchangeWrap { width:950px; margin:0 auto; }
+#elexExchange .inTitle { font:bold 19px/25px Tahoma; padding:0 0 15px;}
+#elexExchange .inTitle p {}
+#elexExchange .inContenet { width:920px; padding:10px 25px; background-color:#eee;}
+#elexExchange .inListWrap { background-color:#fff; padding:10px;}
+#elexExchange .inPayList { float:left; height:44px; width:46%; cursor:pointer;  margin:0 0 1px;}
+#elexExchange .inPayList.hover { background-color:#fafafa;}
+#elexExchange .inPayList.inActive { background-color:#fafafa;}
+#elexExchange .inPayList .inInput { float:left; height:16px; vertical-align:middle; width:15px; padding:14px 8px; }
+#elexExchange .inPayList .inInput input { vertical-align:middle; margin:0; padding:0; line-height:30px; width:15px; height:15px;}
+#elexExchange .inPayList .inAmount { float:left; padding:0 10px; font:bold 14px/43px Tahoma; text-align:right; height:44px; color:#666;}
+#elexExchange .inPayList .payImg { float:left; height:44px;}
+#elexExchange .inPayList .payImg img { width:35px; height:35px; margin:5px 0 0;}
+#elexExchange .inPayList .inMoney { float:left; height:44px; padding:0 5px; }
+#elexExchange .inPayList .inMoney b { margin:9px 0 0; display:inline-block; height:35px;}
+#elexExchange .inPayList .inMoney img { vertical-align:middle;}
+#elexExchange .inPayList .inMoney strong { margin:12px 0 0; display:inline-block; height:32px;}
+#elexExchange .inPayList .inMoney span { font:bold 14px/43px Tahoma; padding:0 10px; height:43px; color:#090; display:inline-block;}
+#elexExchange .inSubmit { height:35px; float:right; margin:10px 10px 0 0; display:inline;}
+#elexExchange .inSubmit a { display:inline-block; padding:5px 15px; background-color:#c9c422; border:1px solid #7e7a05;-moz-border-radius:5px; -webkit-border-radius:5px; color:#333; text-decoration:none; font:bold 13px/20px Tahoma; }
+#elexExchange .inSubmit a:hover { text-decoration:none;}
+
+
+/**创建活动**/
+#elexCreateEvent { background-color:#fff; padding:20px 0 40px;}
+#elexCreateEvent .elexCreateEventWarp { width:950px; margin:0 auto; position:relative;}
+#elexCreateEvent .elexCreateEventLeft .inTitle { font:bold 19px/20px Tahoma; padding:0 0 10px;}
+#elexCreateEvent .elexCreateEventLeft .inLink { height:20px; padding:0 0 5px;}
+#elexCreateEvent .elexCreateEventLeft .inLink span { padding:0 8px; color:#900;}
+#elexCreateEvent .elexCreateEventLeft .inLink a { padding:0 8px; color:#999;}
+#elexCreateEvent .elexCreateEventLeft .inContent { background-color:#eee; border-bottom:1px solid #ccc; border-top:1px solid #ccc; padding:20px 20px;}
+#elexCreateEvent .elexCreateEventLeft .reTitle { font:bold 16px/25px Tahoma; padding:0 0 10px; color:#900; }
+#elexCreateEvent td.tdMiddle input.inText { height:18px; width:400px; line-height:18px; }
+#elexCreateEvent td.tdMiddle input.inText2 { height:18px; width:100px; cursor:pointer; }
+#elexCreateEvent td.tdMiddle select { height:22px;}
+#elexCreateEvent td.tdMiddle textarea { height:100px; width:400px;}
+#elexCreateEvent #elexUpload { padding:5px 0 0;}
+#elexCreateEvent td span { padding:0 10px;}
+#elexCreateEvent td li a { color:#666; padding:0 5px; text-decoration:underline;}
+#elexCreateEvent td li a:hover { color:#999; text-decoration:none;}
+#elexCreateEvent .elexdate { height:22px; position:relative;}
+#elexCreateEvent .elexbtn {}
+#elexCreateEvent .elexbtn p { padding:0 0 3px; font:normal 12px/20px Tahoma; color:#666;}
+#elexCreateEvent .elexbtn p a { display:inline-block; height:22px; background:url(../img/doc_bg.png-2011121501)/*tpa=http://337.eleximg.com/337/v3static/img/doc_bg.png?2011121501*/ no-repeat 0 -250px; border:1px solid #999; text-decoration:none; color:#333;}
+#elexCreateEvent .elexbtn p span { display:inline-block; border:1px solid #eee; border-left:1px solid #fff; border-top:1px solid #fff; height:20px; cursor:pointer; }
+#elexCreateEvent .elexbtn div { padding:15px 0 0;}

@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+.elexUserLogin h2,.elexUserLogin h3,.elexUserLogin h4,.elexUserLogin h5,.elexUserLogin h6 { font-weight:normal; line-height:1.5em;}
+
+/**公用样式**/
+.elexUserLogin { width:100%; padding:0 0 15px;}
+.elexUserLogin .gray { color:#808080;}
+.elexUserLoginWrap { width:998px; margin:0 auto; border:1px solid #ccc; border-top:0; padding:20px 0 40px; }
+.elexUserLoginWrap .elexUserLoginLeft { width:550px; float:left; padding:20px 0 0;}
+.elexUserLoginWrap .elexUserLoginRight { border-top:0; min-height:350px; margin:0 0 0 600px}
+.elexUserLogin h1{ font-size:1.4em}
+.elexUserLogin h2{ font-size:1.4em}
+.elexUserLogin h3{ font-size:1.3em;}
+.elexUserLogin h4{ font-size:1.2em;}
+.elexUserLogin h5{ font-size:1.1em;}
+.elexUserLogin h6{ font-size:1.0em;}
+.elexUserLogin .borTop1px { border-top:1px solid #eee;}
+.elexUserLogin .borBot1px { border-bottom:1px solid #eee;}
+.ajaxLoading { width:15px; height:15px; vertical-align:middle; display:inline-block; margin:0 0 0 15px; }
+.ajaxLoading img { width:15px; height:15px;}
+
+/**登陆框**/
+.loginCom  padding:15px; margin:0 0 0 15px; position:relative;}
+.loginCom .inTitle { margin:0 0 15px;}
+.loginCom .inTitle p { font-size:16px; font-weight:bold;}
+.loginCom .inLoginCont { background-color:#eee; padding:15px 15px 10px; }
+.loginCom .inList { margin:0 0 15px;}
+.loginCom .inList h6 { padding:0 0 5px;}
+.loginCom .inList h6 a { font-weight:normal;}
+.loginCom .inList .BtnBlue b { line-height:20px; padding:0 15px;}
+.loginCom .inList p input { vertical-align:middle;}
+.loginCom .inList p input.elexInput { width:465px; height:20px;}
+.loginCom .inList p input.bg { background-color:#eee; border:1px solid #bbb; border-top-color:#333; border-left-color:#333;}
+.loginCom #elexTips { padding:0 0 5px 20px; color:#000; width:465px; line-height:15px;}
+.loginCom #elexTips.red { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 0 -32px; } 
+.loginCom #elexTips.green { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 0 3px; }
+.loginCom .dialogLoginTab { line-height:20px;}
+
+/**注册**/
+.elexUserRegistr { margin:40px 60px;}
+.elexUserRegistr .inTitle { padding:0 0 10px;}
+.elexUserRegistr .inContent { background-color:#eee; padding:15px;}
+.elexUserRegistr table { width:100%; }
+.elexUserRegistr td { padding:10px 5px; vertical-align:top;}
+.elexUserRegistr td inText { width:300px; height:20px;}
+.elexUserRegistr td.tdLeft { text-align:right; width:180px; color:#333; }
+.elexUserRegistr td.tdLeft .tdTitle { font-weight:bold;}
+.elexUserRegistr td.tdLeft .tabTips { color:#999; font-style:italic;}
+.elexUserRegistr td.tdMiddle { color:#000; width:310px;}
+.elexUserRegistr td.tdMiddle a.BtnBlue b {padding:4px 30px;}
+.elexUserRegistr td.tdMiddle .inText { width:300px; height:20px;}
+.elexUserRegistr td.elexTips .red { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 0 -27px; padding:0 0 0 20px; line-height:25px; height:25px; min-width:1px;} 
+.elexUserRegistr td.elexTips .green { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 0 7px; padding:0 0 0 20px; line-height:25px; height:25px; min-width:1px;}
+.elexUserRegistr td .get_more { padding:5px 0 10px; border-top:1px dashed #ccc; margin:10px 0 0;}
+.elexUserRegistr div.elexTips.red { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 0 -27px; padding:0 0 0 20px; line-height:25px; height:25px; min-width:1px;}
+.elexUserRegistr div.elexTips.green { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 0 7px; padding:0 0 0 20px; line-height:25px; height:25px; min-width:1px;}
+.elexUserRegistr td #captcha { width:104px; height:30px; margin:10px 10px 0 0; vertical-align:middle;}
+.elexUserRegistr td #captcha_code { width:100px; height:20px;}
+.elexUserRegistr td #refresh { vertical-align:middle; height:25px; margin:10px 0 0;}
+
+/**取回密码**/
+.inGetPass { width:600px; margin:20px auto; padding:20px 0 0; -moz-border-radius:5px; -webkit-border-radius:5px; border:1px solid #ccc;}
+.inGetPass .inTitle { margin:0 20px 15px; border-bottom:1px solid #ccc; padding:0 0 8px}
+.inGetPass .getpassTips { padding:0 25px 0 0; margin:0 20px 0;}
+.inGetPass .getpassCont { margin:0 20px 0; padding:0 0 20px;}
+.inGetPass .inList { padding:10px 0;}
+.inGetPass .inList h6 { padding:0 0 5px;}
+.inGetPass .inList p input.inText { width:200px; height:20px;}
+.inGetPass .inList p input.inCode { width:80px; height:20px;}
+.inGetPass .getpassBtn { height:24px; background-color:#eee; padding:15px; text-align:right; border-top:1px solid #eee;}
+.inGetPass .getpassBtn a { margin:0 0 0 15px;}
+.inGetPass .getpassBtn b { line-height:22px;}
+.inGetPass span { vertical-align:middle; display:inline-block; height:18px; line-height:18px; margin:0 0 0 5px;}
+.inGetPass span.red { background:url(../img/ajaxtips.png-2011121501.png)/*tpa=http://337.eleximg.com/337/v3static/img/ajaxtips.png?2011121501*/ no-repeat 10px -30px; padding:3px 5px 5px 30px; line-height:18px; min-width:1px;}
+.inGetPass .getpassCont table { width:100%; margin:20px 0 0;}
+.inGetPass .getpassCont td { padding:5px;} 
+.inGetPass .getpassCont td.inImg { width:50px; height:50px; padding-right:15px;} 
+.inGetPass .getpassCont td.inImg img { width:50px; height:50px; }
+.inGetPass .getpassCont td p { height:20px; padding:0 0 5px;}
+.inGetPass .getpassCont td p input { vertical-align:middle; margin:0 5px;}
+.inGetPass .getpassCont input.inText { width:200px; height:20px;}
+
+
+/**登陆右侧**/
+.loginRight { padding:30px 0 0;}
+.loginRight .inList h6 { padding:0 0 10px;}
+.loginRight .inList p b { line-height:20px; padding:0 10px;}
+
+.ad_728x90 {width:100%;
+margin-bottom:-20px;
+}
+.ad_728x90 .ad {display:block;width:728px;height:90px;margin:0 auto;
+background-color:#F3F3F3;
+border:1px solid #DEDEDE;
+padding:2px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+
+/**新登录**/
+.elexUserLogin2{ padding:0;}
+.loginCom2{ margin:0; padding:0;}
+.loginCom2 .inTitle{ background:#205083; border:1px solid #3B5998; border-bottom:none; color:#fff; padding:0 5px 0 10px; height:30px; line-height:30px; margin:0;}
+.loginCom2 .inTitle2{ padding:0 5px 0 10px; height:30px; line-height:30px; margin:0;}
+.loginCom2 .inTitle p{  font-size:14px;}
+.loginCom2 .inLoginCont{ background-color:#fff; padding:10px 10px 15px; border:1px solid; border-top:none;}
+.loginCom2 .inList p input.elexInput{ width:404px;}
+.loginCom2 .inList .fR{ margin-top:20px;}
+.loginCom2 #register_now{ margin-bottom:0; font-weight:bold;}
+h3.auth_title{background-color:#6D84B4; color:#fff;height:30px; border:1px solid #3B5998; border-bottom:0; padding:0 5px 0 10px; display:block; font: bold 14px/30px Tahoma;height: 30px}

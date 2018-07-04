@@ -1,0 +1,12 @@
+<Result value="true" message="Success!">
+  <item Level="3" NpcID="50001" MissionID="1291" AwardID="1001" CostRich="2000" ProlongRich="700" />
+  <item Level="8" NpcID="50002" MissionID="1291" AwardID="1002" CostRich="4000" ProlongRich="1400" />
+  <item Level="13" NpcID="50003" MissionID="1291" AwardID="1003" CostRich="6000" ProlongRich="2100" />
+  <item Level="18" NpcID="50004" MissionID="1291" AwardID="1004" CostRich="8000" ProlongRich="2800" />
+  <item Level="23" NpcID="50005" MissionID="1291" AwardID="1005" CostRich="10000" ProlongRich="3500" />
+  <item Level="28" NpcID="50006" MissionID="1291" AwardID="1006" CostRich="12000" ProlongRich="4200" />
+  <item Level="33" NpcID="50007" MissionID="1291" AwardID="1007" CostRich="14000" ProlongRich="4900" />
+  <item Level="38" NpcID="50008" MissionID="1291" AwardID="1008" CostRich="16000" ProlongRich="5600" />
+  <item Level="43" NpcID="50009" MissionID="1291" AwardID="1009" CostRich="18000" ProlongRich="6300" />
+  <item Level="45" NpcID="50010" MissionID="1291" AwardID="1010" CostRich="20000" ProlongRich="7000" />
+</Result>

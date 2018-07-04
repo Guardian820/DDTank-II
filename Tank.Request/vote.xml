@@ -1,0 +1,6 @@
+  <result voteId="1" completeMessage="描述！！！！！！！！！！！！！" firstQuestionID="1" award="17001,17002">
+      <item multiple="false" id="1" question="内容！！！！！！！！！！" nextQuestionID="0" >
+          <answer   id="1" value="111111" />
+          <answer   id="2" value="222222" />
+      </item>
+  </result>

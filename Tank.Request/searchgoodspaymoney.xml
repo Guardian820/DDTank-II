@@ -1,0 +1,22 @@
+<Result value="true" message="Success!">
+  <item Number="1" NeedMoney="280" />
+  <item Number="2" NeedMoney="350" />
+  <item Number="3" NeedMoney="420" />
+  <item Number="4" NeedMoney="490" />
+  <item Number="5" NeedMoney="560" />
+  <item Number="6" NeedMoney="630" />
+  <item Number="7" NeedMoney="700" />
+  <item Number="8" NeedMoney="770" />
+  <item Number="9" NeedMoney="840" />
+  <item Number="10" NeedMoney="910" />
+  <item Number="11" NeedMoney="980" />
+  <item Number="12" NeedMoney="1050" />
+  <item Number="13" NeedMoney="1120" />
+  <item Number="14" NeedMoney="1190" />
+  <item Number="15" NeedMoney="1260" />
+  <item Number="16" NeedMoney="1330" />
+  <item Number="17" NeedMoney="1400" />
+  <item Number="18" NeedMoney="1470" />
+  <item Number="19" NeedMoney="1540" />
+  <item Number="20" NeedMoney="1610" />
+</Result>

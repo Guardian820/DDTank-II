@@ -1,0 +1,7 @@
+<Result value="true" message="Success!">
+  <item StarID="1" NeedMoney="0" DestinationReward="112268" VIPLevel="0" ExtractNumber="10,2,3,1" />
+  <item StarID="2" NeedMoney="1000" DestinationReward="112269" VIPLevel="1" ExtractNumber="11,3,3,2" />
+  <item StarID="3" NeedMoney="1600" DestinationReward="112270" VIPLevel="6" ExtractNumber="12,4,3,3" />
+  <item StarID="4" NeedMoney="2500" DestinationReward="112271" VIPLevel="-1" ExtractNumber="13,5,4,3" />
+  <item StarID="5" NeedMoney="3700" DestinationReward="112272" VIPLevel="-1" ExtractNumber="15,7,5,3" />
+</Result>

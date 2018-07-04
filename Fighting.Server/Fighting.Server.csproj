@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0B237FDB-297D-4269-8F13-5A91A7E5195C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Fighting.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Game.Logic">
+      <HintPath>..\Game.Logic\bin\Debug\Game.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="Game.Base">
+      <HintPath>..\Game.Base\bin\Debug\Game.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlDataProvider">
+      <HintPath>..\SqlDataProvider\bin\Debug\SqlDataProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Bussiness">
+      <HintPath>..\Bussiness\bin\Debug\Bussiness.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fighting.Server.GameObjects\ProxyPlayer.cs" />
+    <Compile Include="Fighting.Server.GameObjects\ProxyPlayerInfo.cs" />
+    <Compile Include="Fighting.Server.Games\BattleGame.cs" />
+    <Compile Include="Fighting.Server.Games\GameMgr.cs" />
+    <Compile Include="Fighting.Server.Guild\GuildMgr.cs" />
+    <Compile Include="Fighting.Server.Rooms\AddRoomAction.cs" />
+    <Compile Include="Fighting.Server.Rooms\IAction.cs" />
+    <Compile Include="Fighting.Server.Rooms\ProxyRoom.cs" />
+    <Compile Include="Fighting.Server.Rooms\ProxyRoomMgr.cs" />
+    <Compile Include="Fighting.Server.Rooms\RemoveRoomAction.cs" />
+    <Compile Include="Fighting.Server.Servers\ServerMgr.cs" />
+    <Compile Include="Fighting.Server\FightServer.cs" />
+    <Compile Include="Fighting.Server\FightServerConfig.cs" />
+    <Compile Include="Fighting.Server\ServerClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Fighting.Server\Config.logconfig.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
